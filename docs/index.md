@@ -7,6 +7,12 @@ title: VR Capstone Website - Spring 2021 - Team 1
 
 Our [Project Requirements Doc](/xrcapstone21sp-team1/) is currently under construction.
 
+## What is VR Dodgeball?
+
+(feel free to add to this if you want)
+
+VR Dodgeball is a networked multiplayer game where players can throw virtual dodgeballs at each other. This gives people a fun way to exercise and destress, especially in a pandemic where in-person games of dodgeball aren't as practical.
+
 ## Blog
 
 ### Test blog post - April 6th, 2021
