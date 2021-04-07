@@ -1,3 +1,8 @@
+---
+title: VR Capstone Website - Spring 2021 - Team 1
+---
+<link rel="stylesheet" type="text/css" media="all" href="css/styles.css" />
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/clarisaleu/xrcapstone21sp-team1/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
@@ -28,10 +33,8 @@ Syntax highlighted code block
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/clarisaleu/xrcapstone21sp-team1/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+### About Us
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+<img src="images/clarisa.jpg" alt="Avatar" style="width:200px">
+Clarisa - Senior double majoring in Computer Engineering and ACMS (Discrete Mathematics & Algorithms).
