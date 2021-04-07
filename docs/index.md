@@ -1,53 +1,32 @@
 ---
 title: VR Capstone Website - Spring 2021 - Team 1
+filename: index.md
 ---
 <link rel="stylesheet" type="text/css" media="all" href="css/markdown_styles.css" />
 
-## Project Requirements Doc
-
-Our [Project Requirements Doc](/xrcapstone21sp-team1/) is currently under construction.
-
-## What is VR Dodgeball?
+# What is VR Dodgeball?
 
 (feel free to add to this if you want)
 
 VR Dodgeball is a networked multiplayer game where players can throw virtual dodgeballs at each other. This gives people a fun way to exercise and destress, especially in a pandemic where in-person games of dodgeball aren't as practical.
 
-## Blog
+# About the Team
 
-### Test blog post - April 6th, 2021
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales felis sed quam vestibulum aliquam. Suspendisse dapibus pharetra viverra. Fusce aliquam eros vitae nisi rhoncus, id elementum quam lobortis. Curabitur mattis tortor at eleifend cursus. Ut porttitor nisl sed imperdiet cursus. Suspendisse sed eros sed orci feugiat semper. Etiam nec quam a neque pretium malesuada. Cras gravida metus in tempor interdum.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-
-### About Us
-<img src="images/clarisa.jpg" alt="Avatar" style="width:200px"> <br>
-<p>Clarisa - Senior double majoring in Computer Engineering and ACMS (Discrete Mathematics & Algorithms).</p>
-
-![Timothy's Avatar](/images/timothy.jpg)
-
-Timothy - Senior majoring in Computer Science.
+<table>
+    <tr>
+        <td> Clarisa </td>
+        <td> Timothy </td>
+        <td> Akash </td>
+        <td> Eddie </td>
+    </tr>
+    <tr>
+        <td>
+            <img src="images/clarisa.jpg" alt="Avatar"><br>
+            <p>Clarisa - Senior double majoring in Computer Engineering and ACMS (Discrete Mathematics & Algorithms).</p>
+        </td>
+        <td>
+            <img src="images/timothy.jpg" alt="Avatar"><br>
+            <p>Timothy - Senior majoring in Computer Science.</p>            
+        </td>
+    </tr>
+</table>
