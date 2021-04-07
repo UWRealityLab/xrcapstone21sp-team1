@@ -12,4 +12,10 @@ h2 {
   font-size: 2em;
 }
 
+.blog-post {
+  text-align: left;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
 }
