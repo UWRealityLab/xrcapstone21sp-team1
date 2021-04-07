@@ -1,5 +1,6 @@
 ---
 title: VR Capstone Website - Spring 2021 - Team 1
+layout: template
 filename: index.md
 ---
 <link rel="stylesheet" type="text/css" media="all" href="css/markdown_styles.css" />
