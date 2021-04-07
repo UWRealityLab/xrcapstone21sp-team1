@@ -18,6 +18,12 @@ h2 {
   margin-right: 5%;
 }
 
+.blog-post-title {
+  font-size: 1.5em;
+  text-decoration: none;
+  color: black;
+}
+
 .date {
   color: #555;
 }
