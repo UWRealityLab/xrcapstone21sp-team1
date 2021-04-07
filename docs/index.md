@@ -1,7 +1,7 @@
 ---
 title: VR Capstone Website - Spring 2021 - Team 1
 ---
-<link rel="stylesheet" type="text/css" media="all" href="css/styles.css" />
+<link rel="stylesheet" type="text/css" media="all" href="css/markdown_styles.css" />
 
 ## Project Requirements Doc
 
