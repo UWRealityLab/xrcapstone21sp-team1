@@ -3,3 +3,8 @@ body {
   text-align: center;
   font-family: Helvetica, sans-serif;
 }
+
+.blog-post > p {
+  margin-left: 20%;
+  margin-right: 20%;
+}
