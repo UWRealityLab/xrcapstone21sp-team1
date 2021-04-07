@@ -1,7 +1,7 @@
 ---
 title: Project Requirements Doc
 layout: template
-filename: project_requirements_doc.md
+filename: project_requirements_doc
 --- 
 
 # Project Requirements Doc
