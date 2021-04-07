@@ -5,7 +5,7 @@ title: VR Capstone Website - Spring 2021 - Team 1
 
 ## Project Requirements Doc
 
-Our [Project Requirements Doc](/) is currently under construction.
+Our [Project Requirements Doc](/xrcapstone21sp-team1/) is currently under construction.
 
 ## Blog
 
