@@ -43,4 +43,5 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
 <p>Clarisa - Senior double majoring in Computer Engineering and ACMS (Discrete Mathematics & Algorithms).</p>
 
 ![Timothy's Avatar](/images/timothy.jpg)
+
 Timothy - Senior majoring in Computer Science.
