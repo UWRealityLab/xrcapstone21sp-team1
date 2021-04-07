@@ -22,7 +22,7 @@ Our main goal for next week is to complete our project requirements doc which wi
 
 ### Blocking issues
 
-One concern is the integration of Croquet with a physics engine, as it seems that aframe’s default physics engine does not work with Croquet (although we haven’t tested this). While there may be other physics engines that work with Croquet, we’re not sure if they’ll be compatible with aframe and object interactions (e.g., can we pick up and throw objects?). We’re probably not the only group facing this issue, though, and the people at Croquet are scheduled to give another demonstration soon, so we can ask them then.
+One concern is the integration of Croquet with a physics engine, as it seems that aframe’s default physics engine does not work with Croquet (although we haven’t tested this). While there may be [other physics engines](https://github.com/croquet/Oimo.js) that work with Croquet, we’re not sure if they’ll be compatible with aframe and object interactions (e.g., can we pick up and throw objects?). We’re probably not the only group facing this issue, though, and the people at Croquet are scheduled to give another demonstration soon, so we can ask them then.
 
 ### Notes
 - [Udemy AFRAME tutorial we want to buy with our budget](https://www.udemy.com/course/learn-a-frame-and-get-ready-for-webvr/)
