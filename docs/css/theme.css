@@ -27,3 +27,21 @@ h2 {
 .date {
   color: #555;
 }
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 0.625em;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: darkgrey;
+  border-radius: 0.625em;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: grey; /* Darker than darkgrey!!! */
+}
