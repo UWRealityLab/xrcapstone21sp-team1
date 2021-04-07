@@ -39,5 +39,7 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
 
 
 ### About Us
-<img src="images/clarisa.jpg" alt="Avatar" style="width:200px">
-Clarisa - Senior double majoring in Computer Engineering and ACMS (Discrete Mathematics & Algorithms).
+<div class="center">
+    <img src="images/clarisa.jpg" alt="Avatar" style="width:200px"> <br>
+    <p>Clarisa - Senior double majoring in Computer Engineering and ACMS (Discrete Mathematics & Algorithms).</p>
+</div>
