@@ -41,7 +41,7 @@ We plan on using Croquet to create the multiplayer environment but we still need
 
 - **Akash:** I worked on the blog post as well as my demo where I tested our movement and throwing physics in VR. I also played around with collision events that will help us detect when a player loses and gets eliminated. My demo application shows a forest scene where the user can use the right thumbstick to explore or the left trigger to teleport to any part of the map. They can pick up the ball in the middle and throw it at the walls in front. Clicking on the walls alternates between a darker and light color while hitting the ball on the wall turns it red for a while before it transitions back to its original color. My live demo can be found [here](https://full-merciful-fukuiraptor.glitch.me/).
 
-- **Eddie:** My live demo can be found [here](https://throw-ball.glitch.me/).
+- **Eddie:** For my demo, I played around with interacting with a-frame objects and adding/removing components programatically. In my demo, a user initially starts with a sphere, which they can select with their mouse. Upon selecting the sphere, it becomes invisible and a new sphere gets attached to the camera in the bottom right corner. When the user clicks again, the new sphere will be deleted and the old sphere will be cast off into the distance in the direction that the camera is currently facing. My live demo can be found [here](https://throw-ball.glitch.me/).
 
 - **Timothy:** My live demo can be found [here](https://melodious-gem-sail.glitch.me/).
 
