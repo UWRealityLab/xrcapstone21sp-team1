@@ -20,6 +20,8 @@ The project we are now pursuing is VR Dodgeball - based on the classic game dodg
 
 **Clarisa:** I worked on the website using GitHub pages and modified it to support multiple pages and helped write this blog post. I also talked with the course staff while we were iterating through different possible ideas in order to pick our final project idea. Additionally - I spent some time working on my demo tutorial (homework). My demo tutorial consists of a few spheres, a rotating cube, and two cylinders. The user is able to interact with the spheres by picking them up, stretching them (with two hands to change the size), bouncing them, and throwing them. The cylinders change their color to blue when they detect a collision with a sphere. The rotating cube is a solid body so the sphere do not go through them. Instead of walking around - the user can also use the joystick to control their movement as well. The live demo I made can be found [here](https://general-enchanting-cheque.glitch.me/). 
 
+<hr>
+
 ### Plans for next week
 
 Our main goal for next week is to complete our project requirements doc which will give us a good plan moving forward in where we should be throughout the rest of the course - to ensure we finish our project on time. As a group, we will also start coding for our project. Additionally, we will spend a fair amount of time on our project pitch since this is due as well - in conjunction with the project requirements document.
@@ -28,10 +30,13 @@ Our main goal for next week is to complete our project requirements doc which wi
 
 **Clarisa**: As the project requirements doc is due - my main goal will be to finish that. I also want to help to start coding for our project - by creating a basic map where the user is able to grab dodge-balls from a bin and throw them at targets. I can do this by remixing the demo project I worked on this week for my tutorial.
 
+<hr>
 
 ### Blocking issues
 
 One concern is the integration of Croquet with a physics engine, as it seems that aframe’s default physics engine does not work with Croquet (although we haven’t tested this). While there may be [other physics engines](https://github.com/croquet/Oimo.js) that work with Croquet, we’re not sure if they’ll be compatible with aframe and object interactions (e.g., can we pick up and throw objects?). We’re probably not the only group facing this issue, though, and the people at Croquet are scheduled to give another demonstration soon, so we can ask them then.
+
+<hr>
 
 ### Notes
 - [Udemy AFRAME tutorial we want to buy with our budget](https://www.udemy.com/course/learn-a-frame-and-get-ready-for-webvr/)
