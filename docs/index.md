@@ -33,5 +33,9 @@ VR Dodgeball is a networked multiplayer game where players can throw virtual dod
             <img src="images/akash.jpg" alt="Avatar"><br>
             <p>Akash - Senior majoring in Computer Engineering.</p>            
         </td>
+        <td>
+            <img src="images/eddie.jpg" alt="Avatar"><br>
+            <p>Akash - Also a senior majoring in Computer Science.</p>            
+        </td>
     </tr>
 </table>
