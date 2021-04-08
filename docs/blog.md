@@ -68,3 +68,4 @@ We were wondering if we could buy this [Udemy a-frame course](https://www.udemy.
 - [Croquet.io SDK we'll be using](https://croquet.io/sdk/docs/)
 - [Mozilla Demo for building game using AFRAME and low-poly models](https://hacks.mozilla.org/2018/03/immersive-aframe-low-poly/)
 - [Cannon.js physics engine we researched but might not use](https://schteppe.github.io/cannon.js/)
+- [Demo of throwing and catching balls using aframe](https://wmurphyrd.github.io/aframe-super-hands-component/examples/physics/)
