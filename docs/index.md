@@ -7,9 +7,9 @@ filename: index
 
 # What is VR Dodgeball?
 
-(feel free to add to this if you want)
-
 VR Dodgeball is a networked multiplayer game where players can throw virtual dodgeballs at each other. This gives people a fun way to exercise and destress, especially in a pandemic where in-person games of dodgeball aren't as practical.
+
+Read more by visiting [our blog](/xrcapstone21sp-team1/blog).
 
 # About the Team
 
