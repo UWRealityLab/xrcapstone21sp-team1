@@ -1,5 +1,4 @@
 ---
-title: 
 layout: template
 filename: blog1
 --- 
