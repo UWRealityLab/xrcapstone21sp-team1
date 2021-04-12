@@ -14,7 +14,7 @@
       <h1 class="project-name"><a href="/xrcapstone21sp-team1/">VR Dodgeball</a></h1>
       <h2 class="project-tagline"></h2>
       {% for page in site.pages %}
-        {% if page.title != "" and page.title %}
+        {% if page.title != "Blog Post 1" and page.title != "Blog Post 2" and page.title %}
           <a href= {{ page.filename }} class="btn">{{ page.title }}</a>
         {% endif %}
       {% endfor %}
