@@ -1,8 +1,3 @@
----
-title: Blog Post #1
-filename: blog1
----
-
 ## Blog Post #1 - Idea Formulation - April 6th, 2021
 
 <hr>
