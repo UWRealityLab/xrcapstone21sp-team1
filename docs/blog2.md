@@ -1,5 +1,5 @@
 ---
-title: Blog Post 2
+title: 
 layout: template
 filename: blog2
 --- 
