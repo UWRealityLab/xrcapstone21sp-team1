@@ -1,3 +1,9 @@
+---
+title: Blog Post 2
+layout: template
+filename: blog2
+--- 
+
 ## Blog Post #2 -  Finalizing Project Specifics - April 13th, 2021
 
 <hr>
