@@ -53,7 +53,7 @@ Our main goal for next week will be to integrate Croquet into a new application 
 
 ### Blocking issues
 
-As we have discovered while working on our rapid prototype - Super Hands and Croquet do not work very well together. Particularly we found that if a user moves too quickly while holding a ball what happens is that the user will lose contact with the ball (ending the grab). This has shifted our implementation plans to instead create our own version of Super Hands with basic functionality of grabbing and throwing spheres.
+As we have discovered while trying to integrate Croquet + Super Hands + Physics - Super Hands and Croquet do not work very well together. Particularly we found that if a user moves too quickly while holding a ball what happens is that the user will lose contact with the ball (ending the grab). This has shifted our implementation plans to instead create our own version of Super Hands with basic functionality of grabbing and throwing spheres.
 
 <hr>
 
