@@ -27,6 +27,10 @@ While in VR, the user can grab the red cube and throw it. There's also a small s
 
 This demo is promising, but there are still some improvements we need to make. For some reason, the location of the blue sphere isn't updated inside of a WebXR session. So while in VR, a player can see another player, but they can't see them moving around, nor can they hit them (since the bounding sphere will sometimes be in a different place). We also haven't implemented collision detection for when one player hits another with a ball. Finally, the locations of the other objects aren't published (so if one player throws the red cube, the other players won't know).
 
+### Rapid Prototype
+We also worked on a rapid prototype to present to the staff which can be found [here](https://aba1.glitch.me/). The rapid prototype is a modifications of Akash's demo from last week to support faster throwing of spheres & allows users to throw them at moving targets. The next step is to integrate Croquet to support multiple users.
+
+
 <hr>
 
 ### Individual work log
@@ -58,6 +62,6 @@ As we have discovered while working on our rapid prototype - Super Hands and Cro
 
 
 ### Delivarables
-- [Project Pitch Slide Deck - Team 1](https://docs.google.com/presentation/d/1ooTNhn3zvYbwdJ0hO6mIZ8DKmbj0zTc9Z7tN6LT96zE/edit)
-- [Project Requirements Document (PRD)](https://uwrealitylab.github.io/xrcapstone21sp-team1/project_requirements_doc)
-- [Rapid Prototype]()
+- [Project Pitch Slide Deck - Team 1](https://docs.google.com/presentation/d/1ooTNhn3zvYbwdJ0hO6mIZ8DKmbj0zTc9Z7tN6LT96zE/edit) - Due Tuesday
+- [Project Requirements Document (PRD)](https://uwrealitylab.github.io/xrcapstone21sp-team1/project_requirements_doc) - Due Thursday
+- [Rapid Prototype](https://aba1.glitch.me/) - Due Thursday
