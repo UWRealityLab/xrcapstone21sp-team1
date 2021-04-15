@@ -10,6 +10,10 @@ filename: blog2
 
 ### What we accomplished
 
+This week we gave our project pitch in class where we talked about a variety of things as it relates to our project including: motivation behind our project, existing solutions, an MVP, secondary goals, plan for how to succeed this quarter, individual team mate responsibilities, the technology we plan on using for our project, and stretch goals. Some suggestions from the staff was too integrate voice chat as a required feature in our project, which was originally a stretch goal. The slides can be found [here](https://docs.google.com/presentation/d/1ooTNhn3zvYbwdJ0hO6mIZ8DKmbj0zTc9Z7tN6LT96zE/edit) - where we are Team 1.
+
+We completed our [Project Requirements Document (PRD)](https://uwrealitylab.github.io/xrcapstone21sp-team1/project_requirements_doc) which details our project plan with deliverables for each week for the remainder of the quarter. We also discuss which features should be in the MVP and which features are secondary/stretch goals - as well as performance metrics, individual responsibilties, budget, and possible risks/how we will address these risks as they relate to our project.
+
 #### Croquet + Physics + Super Hands demo
 We also worked on a [demo](https://super-hands-croquet.glitch.me/) that integrated Croquet, aframe's physics system, and super hands. Like the [original Croquet demo](https://croquet-hello-webvr.glitch.me/), players can see each other move around in the virtual world.
 
@@ -27,7 +31,7 @@ This demo is promising, but there are still some improvements we need to make. F
 
 ### Individual work log
 
-- **Clarisa:**
+- **Clarisa:** I worked mostly on the PRD, this blog post, and the website. I also worked on the slide deck for our project pitch a bit to help polish up the details. This week I am also the team lead - so I also lead Thursday's meeting with the staff members to report our weekly progress. Collectively with the team - I also researched the Croquet SDK a bit more where I also joined their [developer slack](https://croquet-dev.slack.com/join/shared_invite/zt-ns5gscrp-6nfDQSzxvpgoJyRg9DNfsQ#/shared-invite/email).
 
 - **Akash:**
 
@@ -39,16 +43,21 @@ This demo is promising, but there are still some improvements we need to make. F
 
 ### Plans for next week
 
+Our main goal for next week will be to integrate Croquet into a new application we build from scratch. We aim to have Croquet fully integrated into a new application with basic physics where voice chat is also implemented.
 
 <hr>
 
 ### Blocking issues
 
-
+As we have discovered while working on our rapid prototype - Super Hands and Croquet do not work very well together. Particularly we found that if a user moves too quickly while holding a ball what happens is that the user will lose contact with the ball (ending the grab). This has shifted our implementation plans to instead create our own version of Super Hands with basic functionality of grabbing and throwing spheres.
 
 <hr>
 
-### Questions:
-
-
 ### Notes
+- [Super Hands repo for reference](https://github.com/wmurphyrd/aframe-super-hands-component)
+
+
+### Delivarables
+- [Project Pitch Slide Deck - Team 1](https://docs.google.com/presentation/d/1ooTNhn3zvYbwdJ0hO6mIZ8DKmbj0zTc9Z7tN6LT96zE/edit)
+- [Project Requirements Document (PRD)](https://uwrealitylab.github.io/xrcapstone21sp-team1/project_requirements_doc)
+- [Rapid Prototype]()
