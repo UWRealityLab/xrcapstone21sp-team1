@@ -2,7 +2,7 @@
 title: Blog Post 2
 layout: template
 filename: blog2
---- 
+---
 
 ## Blog Post #2 -  Finalizing Project Specifics - April 13th, 2021
 
@@ -13,15 +13,15 @@ filename: blog2
 
 <hr>
 
-### Inidividual work log
+### Individual work log
 
-- **Clarisa:** 
+- **Clarisa:**
 
-- **Akash:** 
+- **Akash:**
 
-- **Eddie:** 
+- **Eddie:**
 
-- **Timothy:** 
+- **Timothy:**
 
 <hr>
 

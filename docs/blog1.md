@@ -2,7 +2,7 @@
 title: Blog Post 1
 layout: template
 filename: blog1
---- 
+---
 
 ## Blog Post #1 - Idea Formulation - April 6th, 2021
 
@@ -31,7 +31,7 @@ We plan on using Croquet to create the multiplayer environment but we still need
 
 <hr>
 
-### Inidividual work log
+### Individual work log
 
 - **Clarisa:** I worked on the website using GitHub pages and modified it to support multiple pages and helped write this blog post. I also talked with the course staff while we were iterating through different possible ideas in order to pick our final project idea. Additionally - I spent some time working on my demo tutorial (homework). My demo tutorial consists of a few spheres, a rotating cube, and two cylinders. The user is able to interact with the spheres by picking them up, stretching them (with two hands to change the size), bouncing them, and throwing them. The cylinders change their color to blue when they detect a collision with a sphere. The rotating cube is a solid body so the sphere do not go through them. Instead of walking around - the user can also use the joystick to control their movement as well. The live demo I made can be found [here](https://general-enchanting-cheque.glitch.me/).
 
