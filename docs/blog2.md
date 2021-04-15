@@ -10,6 +10,16 @@ filename: blog2
 
 ### What we accomplished
 
+#### Croquet + Physics + Super Hands demo
+We also worked on a [demo](https://super-hands-croquet.glitch.me/) that integrated Croquet, aframe's physics system, and super hands. Like the [original Croquet demo](https://croquet-hello-webvr.glitch.me/), players can see each other move around in the virtual world.
+
+![Screenshot of the demo with one player moving and the other watching a moving blue sphere](/images/croquet-player.gif)
+
+In the above image, two players have joined the same session. The one on the left is moving around. The blue sphere on the right represents the left player. As the left player moves, the blue sphere moves with them. Using croquet, location updates are published to each player so they can see other players moving around.
+
+The red spikes on the sphere represent the bounding sphere that the physics engine is using to compute collisions. While working on this demo, we discovered that the bounding sphere wasn't always in the same location as the blue sphere displayed on the screen. With some modifications (repeatedly setting the blue sphere's location to the bounding sphere's), we've fixed this issue on desktop computers.
+
+This demo is promising, but there are still some improvements we need to make. For some reason, the location of the blue sphere isn't updated inside of a WebXR session. So while in VR, a player can see another player, but they can't see them moving around, nor can they hit them (since the bounding sphere will sometimes be in a different place).
 
 <hr>
 
