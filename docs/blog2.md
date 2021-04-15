@@ -21,7 +21,7 @@ The red spikes on the sphere represent the bounding sphere that the physics engi
 
 While in VR, the user can grab the red cube and throw it. There's also a small sphere that is also grabbable, although it isn't pictured in this screenshot.
 
-This demo is promising, but there are still some improvements we need to make. For some reason, the location of the blue sphere isn't updated inside of a WebXR session. So while in VR, a player can see another player, but they can't see them moving around, nor can they hit them (since the bounding sphere will sometimes be in a different place). We also haven't implemented collision detection for when one player hits another with a ball. Finally, the locations of the other objects aren't published (so if one player throws the red cube, the other players wont' know).
+This demo is promising, but there are still some improvements we need to make. For some reason, the location of the blue sphere isn't updated inside of a WebXR session. So while in VR, a player can see another player, but they can't see them moving around, nor can they hit them (since the bounding sphere will sometimes be in a different place). We also haven't implemented collision detection for when one player hits another with a ball. Finally, the locations of the other objects aren't published (so if one player throws the red cube, the other players won't know).
 
 <hr>
 
