@@ -52,8 +52,8 @@ Our main goal for next week will be to integrate Croquet into a new application 
 <hr>
 
 ### Blocking issues
-
-As we have discovered while trying to integrate Croquet + Super Hands + Physics - Super Hands and Croquet do not work very well together. Particularly we found that if a user moves too quickly while holding a ball what happens is that the user will lose contact with the ball (ending the grab). This has shifted our implementation plans to instead create our own version of Super Hands with basic functionality of grabbing and throwing spheres.
+- A blocking issue we discovered when having multiple users in a single session in VR modes is that positions of other users are not updated as they move around the room. That is - a player can see another player has entered but can't see how they move or that users interactions in the room (i.e. if a user moves an object etc.).
+- As we have discovered while trying to integrate Croquet + Super Hands + Physics - Super Hands and Croquet do not work very well together. Particularly we found that if a user moves too quickly while holding a ball what happens is that the user will lose contact with the ball (ending the grab). This has shifted our implementation plans to instead create our own version of Super Hands with basic functionality of grabbing and throwing spheres.
 
 <hr>
 
