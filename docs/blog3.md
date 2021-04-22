@@ -48,7 +48,8 @@ I worked on the updated throwing app with Akash. We focused on making throwing f
 
 ### Plans for next week
 
-Next week, we plan on combining the parts we worked on this week to create a basic game where multiple players can speak and throw items at each other.
+Next week, we plan on combining the parts we worked on this week to create a basic game where multiple players can speak and throw items at each other. Also - for team work:
+- Timothy & Clarisa: Work on improving movement of sphere to be more smooth. Update objects in map to be solid bodies (i.e. can't run through objects).
 
 <hr>
 
