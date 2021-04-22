@@ -16,7 +16,7 @@ This week we split into 2 groups. One group worked on building a Croquet applica
 
 #### Voice Chat and Physics With Croquet
 
-A link to a demo demonstrating this feature can be found [here](https://cate-edit.glitch.me/).
+A link to an app demonstrating this feature can be found [here](https://cate-edit.glitch.me/).
 
 Below is what a room might look like when you enter (insert image)
 The white balls represent users and when entering the same room, players are now able to hold conversations with each other. When you move to the other side of another player, you will also be able to hear the voice coming from that direction.
