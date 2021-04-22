@@ -38,7 +38,7 @@ The new demo still requires some tuning. Currently, we are determing the velocit
 
 ### Individual work log
 
-- **Clarisa:**
+- **Clarisa:** I [remixed](https://cate-edit.glitch.me/) Timothy's [original demo](https://super-hands-croquet.glitch.me/) which enabled multiple users to join a room and you could see the users movement in real time. My changes included adding networked audio in the room - so now users can chat with one another through the microphone in a discord style. This was based on the provided [demo](https://glitch.com/edit/#!/uwrl-networked-aframe-audio) for networked audio given to the class. After that - Timothy and I worked together to implement the croquet logic for having an entity/object's position update for all users in the room when one user interacts/moves the object in the room. This is the logic needed to have a dodgeballs position update for all users in the room and is a key part of our project. I also implemented movement controls in our remixed glitch project so users can also move around the room with their joysticks.
 
 - **Akash:** I worked on our implementation of hands in VR with Eddie. We tried various different implementations of tracking the position of the ball and hand and using it for throwing to get the most natural feel. It still requires some fine tuning but the throws already feel much better than with superhands.
 
@@ -50,8 +50,7 @@ The new demo still requires some tuning. Currently, we are determing the velocit
 
 ### Plans for next week
 
-Next week, we plan on combining the parts we worked on this week to create a basic game where multiple players can speak and throw items at each other. Also - for team work:
-- Timothy & Clarisa: Work on improving movement of sphere to be more smooth. Update objects in map to be solid bodies (i.e. can't run through objects).
+Next week, we plan on combining the parts we worked on this week to create a basic game where multiple players can speak and throw items at each other. Also as some small notes (work to do over the weeked/early next week) - on the Croquet side Timothy & Clarisa also want to make it so users cannot walk through objects & additionally want to work on improving the movement of entites/objects to be more smooth.
 
 <hr>
 
@@ -63,13 +62,10 @@ None at the moment.
 
 ### Notes
 
-[Old Croquet and Physics demo](https://super-hands-croquet.glitch.me/)
-
-[Old Rapid Development App](https://aba1.glitch.me/)
-
-[Voice Chat and Physics Demo](https://cate-edit.glitch.me/)
-
-[Updated Throwing App](https://aaqq.glitch.me/)
+- [Old Croquet and Physics demo](https://super-hands-croquet.glitch.me/)
+- [Old Rapid Development App](https://aba1.glitch.me/)
+- [Voice Chat and Physics Demo - added logic for entities positions to be updated](https://cate-edit.glitch.me/)
+- [Updated Throwing App](https://aaqq.glitch.me/)
 
 
 ### Delivarables
