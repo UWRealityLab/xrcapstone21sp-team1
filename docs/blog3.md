@@ -12,17 +12,19 @@ All applications described can also be found in the notes section.
 
 ### What we accomplished
 
-This week we split into 2 groups. One group worked on building a Croquet application from the ground up with voice chat and physics, and the other group worked on writing a component that would allow players to pick up and throw balls in a more natural-feeling way.
+This week we split into 2 groups. One group worked on building a Croquet application with voice chat and physics, and the other group worked on writing a component that would allow players to pick up and throw balls in a more natural-feeling way.
 
 #### Voice Chat and Physics With Croquet
 
 A link to an app demonstrating this feature can be found [here](https://cate-edit.glitch.me/).
 
-Below is what a room might look like when you enter ![](https://i.imgur.com/eEkOU8S.png)
+Below is what a room might look like when you enter: ![](https://i.imgur.com/eEkOU8S.png)
 
-The white balls represent users and when entering the same room, players are now able to hold conversations with each other. When you move to the other side of another player, you will also be able to hear the voice coming from that direction.
+The white (later changed to blue) balls represent users and when entering the same room, players are now able to hold conversations with each other. When you move to the other side of another player, you will also be able to hear the voice coming from that direction.
 
 When another player runs into one of the objects on the left (like the yellow cylinder), all other users will be able to see the cylinder get hit in the opposite direction. One thing that we will still need to improve is that when you hit a cylinder with your avatar, although other users can see the collision and the result, the cylinder will not update on your screen and you will simply pass through it.
+
+This demo also updates the positions of objects for all users, so if one user moves an object, the other users will see the object move as well. To test this, we had two sessions connected to the same game room. The first user quickly moves out of the way of a black sphere, which is located right below the spawn point. When the second user joins, they hit the black sphere, causing it to roll out of the way. We found that both users observed the sphere rolling away at the same time, showing that the sphere's position was shared between the two users.
 
 #### Throwing Balls
 
@@ -36,13 +38,13 @@ The new demo still requires some tuning. Currently, we are determing the velocit
 
 ### Individual work log
 
-- **Clarisa:** 
+- **Clarisa:**
 
-- **Akash:** 
+- **Akash:** I worked on our implementation of hands in VR with Eddie. We tried various different implementations of tracking the position of the ball and hand and using it for throwing to get the most natural feel. It still requires some fine tuning but the throws already feel much better than with superhands.
 
-- **Eddie:** 
-I worked on the updated throwing app with Akash. We focused on making throwing feel more natural by tracking the throwing motion rather than the instant the ball is released and trying to get the ball to follow the motion of the controller more precisely.
-- **Timothy:** 
+- **Eddie:** I worked on the updated throwing app with Akash. We focused on making throwing feel more natural by tracking the throwing motion rather than the instant the ball is released and trying to get the ball to follow the motion of the controller more precisely.
+
+- **Timothy:** I modified the [Croquet + Physics + Super Hands demo](https://super-hands-croquet.glitch.me/) so that users can see other users moving around inside a WebXR session. Users can also throw objects at the users (with super hands) and hit them, although collision detection is still unimplemented. After Clarisa [remixed this demo](https://cate-edit.glitch.me/) and added voice control, we modified the demo to publish the location of a black sphere (see [Voice Chat and Physics with Croquet](#voice-chat-and-physics-with-croquet)).
 
 <hr>
 
@@ -61,9 +63,11 @@ None at the moment.
 
 ### Notes
 
-[Voice Chat and Physics Demo](https://cate-edit.glitch.me/)
+[Old Croquet and Physics demo](https://super-hands-croquet.glitch.me/)
 
 [Old Rapid Development App](https://aba1.glitch.me/)
+
+[Voice Chat and Physics Demo](https://cate-edit.glitch.me/)
 
 [Updated Throwing App](https://aaqq.glitch.me/)
 
