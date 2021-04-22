@@ -40,10 +40,9 @@ The new demo still requires some tuning. Currently, we are determing the velocit
 
 - **Clarisa:**
 
-- **Akash:**
+- **Akash:** I worked on our implementation of hands in VR with Eddie. We tried various different implementations of tracking the position of the ball and hand and using it for throwing to get the most natural feel. It still requires some fine tuning but the throws already feel much better than with superhands.
 
-- **Eddie:**
-I worked on the updated throwing app with Akash. We focused on making throwing feel more natural by tracking the throwing motion rather than the instant the ball is released and trying to get the ball to follow the motion of the controller more precisely.
+- **Eddie:** I worked on the updated throwing app with Akash. We focused on making throwing feel more natural by tracking the throwing motion rather than the instant the ball is released and trying to get the ball to follow the motion of the controller more precisely.
 
 - **Timothy:** I modified the [Croquet + Physics + Super Hands demo](https://super-hands-croquet.glitch.me/) so that users can see other users moving around inside a WebXR session. Users can also throw objects at the users (with super hands) and hit them, although collision detection is still unimplemented. After Clarisa [remixed this demo](https://cate-edit.glitch.me/) and added voice control, we modified the demo to publish the location of a black sphere (see [Voice Chat and Physics with Croquet](#voice-chat-and-physics-with-croquet)).
 
