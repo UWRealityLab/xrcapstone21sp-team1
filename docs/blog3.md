@@ -58,9 +58,13 @@ None at the moment.
 <hr>
 
 ### Notes
+
 [Voice Chat and Physics Demo](https://cate-edit.glitch.me/)
+
 [Old Rapid Development App](https://aba1.glitch.me/)
+
 [Updated Throwing App](https://aaqq.glitch.me/)
+
 
 ### Delivarables
 
