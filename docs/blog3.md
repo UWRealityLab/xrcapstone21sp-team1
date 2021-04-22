@@ -61,9 +61,11 @@ None at the moment.
 
 ### Notes
 
-[Voice Chat and Physics Demo](https://cate-edit.glitch.me/)
+[Old Croquet and Physics demo](https://super-hands-croquet.glitch.me/)
 
 [Old Rapid Development App](https://aba1.glitch.me/)
+
+[Voice Chat and Physics Demo](https://cate-edit.glitch.me/)
 
 [Updated Throwing App](https://aaqq.glitch.me/)
 
