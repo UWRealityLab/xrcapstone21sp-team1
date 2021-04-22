@@ -12,17 +12,19 @@ All applications described can also be found in the notes section.
 
 ### What we accomplished
 
-This week we split into 2 groups. One group worked on building a Croquet application from the ground up with voice chat and physics, and the other group worked on writing a component that would allow players to pick up and throw balls in a more natural-feeling way.
+This week we split into 2 groups. One group worked on building a Croquet application with voice chat and physics, and the other group worked on writing a component that would allow players to pick up and throw balls in a more natural-feeling way.
 
 #### Voice Chat and Physics With Croquet
 
 A link to an app demonstrating this feature can be found [here](https://cate-edit.glitch.me/).
 
-Below is what a room might look like when you enter ![](https://i.imgur.com/eEkOU8S.png)
+Below is what a room might look like when you enter: ![](https://i.imgur.com/eEkOU8S.png)
 
-The white balls represent users and when entering the same room, players are now able to hold conversations with each other. When you move to the other side of another player, you will also be able to hear the voice coming from that direction.
+The white (later changed to blue) balls represent users and when entering the same room, players are now able to hold conversations with each other. When you move to the other side of another player, you will also be able to hear the voice coming from that direction.
 
 When another player runs into one of the objects on the left (like the yellow cylinder), all other users will be able to see the cylinder get hit in the opposite direction. One thing that we will still need to improve is that when you hit a cylinder with your avatar, although other users can see the collision and the result, the cylinder will not update on your screen and you will simply pass through it.
+
+This demo also updates the positions of objects for all users, so if one user moves an object, the other users will see the object move as well. To test this, we had two sessions connected to the same game room. The first user quickly moves out of the way of a black sphere, which is located right below the spawn point. When the second user joins, they hit the black sphere, causing it to roll out of the way. We found that both users observed the sphere rolling away at the same time, showing that the sphere's position was shared between the two users.
 
 #### Throwing Balls
 
