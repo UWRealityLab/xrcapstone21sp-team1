@@ -22,7 +22,7 @@ Below is what a room might look like when you enter ![](https://i.imgur.com/eEkO
 
 The white balls represent users and when entering the same room, players are now able to hold conversations with each other. When you move to the other side of another player, you will also be able to hear the voice coming from that direction.
 
-When another player runs into one of the objects on the left (like the left hand cylinder), all other users will be able to see the cylinder get hit in the opposite direction. One thing that we will still need to improve is that when you hit a cylinder with your avatar, although other users can see the collision and the result, the cylinder will not update on your screen and you will simply pass through it.
+When another player runs into one of the objects on the left (like the yellow cylinder), all other users will be able to see the cylinder get hit in the opposite direction. One thing that we will still need to improve is that when you hit a cylinder with your avatar, although other users can see the collision and the result, the cylinder will not update on your screen and you will simply pass through it.
 
 #### Throwing Balls
 
