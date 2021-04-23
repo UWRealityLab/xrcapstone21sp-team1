@@ -18,13 +18,13 @@ This week we split into 2 groups. One group worked on building a Croquet applica
 
 A link to an app demonstrating this feature can be found [here](https://cate-edit.glitch.me/).
 
-Below is what a room might look like when you enter: ![](https://i.imgur.com/eEkOU8S.png)
+Below is what a room might look like when you enter: ![](./images/blog3-demo.png)
+The left hand and right hand side correspond to different players - where they both see eachother. To use the demo in the browser - you are able to use the wasd keys. To use the demo in VR mode - you can use the joysticks. You are also able to pick up the cubes and the sphere in the room and throw/drop/stretch them (using superhands). We have superhands in use at the moment - but next week plan on changing this to use Eddie + Akash's code.
 
-The white (later changed to blue) balls represent users and when entering the same room, players are now able to hold conversations with each other. When you move to the other side of another player, you will also be able to hear the voice coming from that direction.
+The blue balls represent users and when entering the same room, players are now able to hold conversations with each other over voice chat. When you move to the other side of another player, you will also be able to hear the voice coming from that direction. You are able to see the players position update in real time as well.
 
-When another player runs into one of the objects on the left (like the yellow cylinder), all other users will be able to see the cylinder get hit in the opposite direction. One thing that we will still need to improve is that when you hit a cylinder with your avatar, although other users can see the collision and the result, the cylinder will not update on your screen and you will simply pass through it.
+Users are able to interact with objects - where the other players in the room do not go through the objects. One issue we had was that the object positions are not all the same in each users view (blocking issue). This demo however shows a few key features - such as croquet with aframe-physics, voice integration and users being able to join the same room with user positions being updating in real time. To unblock ourselves (croquet team: Timothy & Clarisa) with object positions not being consistent across user views - we plan to email our mentor this week and spend more time in office hours. As our workload for next week was planned to work on integrating Eddie & Akash's work with superhands and this week involved more coding - we plan to take advantage of the additional buffer time we planned.
 
-This demo also updates the positions of objects for all users, so if one user moves an object, the other users will see the object move as well. To test this, we had two sessions connected to the same game room. The first user quickly moves out of the way of a black sphere, which is located right below the spawn point. When the second user joins, they hit the black sphere, causing it to roll out of the way. We found that both users observed the sphere rolling away at the same time, showing that the sphere's position was shared between the two users.
 
 #### Throwing Balls
 
@@ -38,7 +38,7 @@ The new demo still requires some tuning. Currently, we are determing the velocit
 
 ### Individual work log
 
-- **Clarisa:** I [remixed](https://cate-edit.glitch.me/) Timothy's [original demo](https://super-hands-croquet.glitch.me/) which enabled multiple users to join a room and you could see the users movement in real time. My changes included adding networked audio in the room - so now users can chat with one another through the microphone in a discord style. This was based on the provided [demo](https://glitch.com/edit/#!/uwrl-networked-aframe-audio) for networked audio given to the class. After that - Timothy and I worked together to implement the croquet logic for having an entity/object's position update for all users in the room when one user interacts/moves the object in the room. This is the logic needed to have a dodgeballs position update for all users in the room and is a key part of our project. I also implemented movement controls in our remixed glitch project so users can also move around the room with their joysticks.
+- **Clarisa:** I [remixed](https://cate-edit.glitch.me/) Timothy's [original demo](https://super-hands-croquet.glitch.me/) which enabled multiple users to join a room and you could see the users movement in real time. My changes included adding networked audio in the room - so now users can chat with one another through the microphone in a discord style. This was based on the provided [demo](https://glitch.com/edit/#!/uwrl-networked-aframe-audio) for networked audio given to the class. After that - Timothy and I started work together to implement the croquet logic for having an entity/object's position update for all users in the room when one user interacts/moves the object in the room. We implementing the Model/View code but need to debug it this weekend more. I also implemented movement controls in our remixed glitch project so users can also move around the room with their joysticks.
 
 - **Akash:** I worked on our implementation of hands in VR with Eddie. We tried various different implementations of tracking the position of the ball and hand and using it for throwing to get the most natural feel. It still requires some fine tuning but the throws already feel much better than with superhands.
 
@@ -50,13 +50,13 @@ The new demo still requires some tuning. Currently, we are determing the velocit
 
 ### Plans for next week
 
-Next week, we plan on combining the parts we worked on this week to create a basic game where multiple players can speak and throw items at each other. Also as some small notes (work to do over the weeked/early next week) - on the Croquet side Timothy & Clarisa also want to make it so users cannot walk through objects & additionally want to work on improving the movement of entites/objects to be more smooth.
+Next week, we plan on combining the parts we worked on this week to create a basic game where multiple players can speak and throw items at each other. Timothy and Clarisa will also continue work on making sure that objects positions are updated in real time for all user in the room.
 
 <hr>
 
 ### Blocking issues
 
-None at the moment.
+- One blocking issue on the croquet side (Timothy + Clarisa) is that we are having trouble having object's positions publish in real time in the room. What happens is that users are not correctly all seeing the same view of the objects in the room (i.e. - same positions, etc). We have it so that users can all see everyones position update correctly (blue sphere) however. We plan on going to OH next week and working on it this weekend as well but for now it is a blocker.
 
 <hr>
 
