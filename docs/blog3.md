@@ -28,11 +28,9 @@ Users are able to interact with objects - where the other players in the room do
 
 #### Throwing Balls
 
-In our [rapid prototype app](https://aba1.glitch.me/), we had implemented throwing in a naive way. Previously, a user can pick up a ball and when releasing it, the velocity of the ball is set to the velocity of the controller and then multiplied by some scalar. This led to some unintended behavior where if you released the ball after picking it up, even with no throwing motion, the ball would move much more quickly than expected. Additionally, the "Superhands" module had a significant delay between when you move your hand and when the grabbed ball is moved. This led to issues where if you moved your hand too fast, the ball would end up being too far away from your hands, ending the grab. When combined with the above naive implementation of throwing, the ball would sometimes shoot off in an unknown direction.
+In our rapid prototype app, we had implemented throwing in a naive way. Previously, a user can pick up a ball and when releasing it, the velocity of the ball is set to the velocity of the controller and then multiplied by some scalar. This led to some unintended behavior where if you released the ball after picking it up, even with no throwing motion, the ball would move much more quickly than expected. Additionally, the "Superhands" module had a significant delay between when you move your hand and when the grabbed ball is moved. This led to issues where if you moved your hand too fast, the ball would end up being too far away from your hands, ending the grab. When combined with the above naive implementation of throwing, the ball would sometimes shoot off in an unknown direction.
 
-This week, we implemented our own throwing and grabbing system that aimed to solve this issue. A link the the new demo can be found [here](https://aaqq.glitch.me/). Here, the ball tracks the motion of the controller with a nearly unnoticable delay so that it is impossible to lose your grip on the ball from jerky motions. Throwing has also been improved so that we now track the position of the ball from the last few frames before the ball is released to determine the throwing velocity. This led to a much more natural feeling throw and normal behavior when the you drop the ball.
-
-The new demo still requires some tuning. Currently, we are determing the velocity of the ball based on the linear motion of your hands. However, in a real throw, the velocity of the ball is also impacted by angular forces (i.e. wrist motions). In a future update, we intend to add this.
+This week, we implemented our own throwing and grabbing system that aimed to solve this issue. A link the the new demo can be found [here](https://aba1.glitch.me/). Here, the ball tracks the motion of the controller with a nearly unnoticable delay so that it is impossible to lose your grip on the ball from jerky motions. Throwing has also been improved so that we now track the position of the ball from the last few frames before the ball is released to determine the throwing velocity. This led to a much more natural feeling throw and normal behavior when the you drop the ball.
 
 <hr>
 
@@ -63,9 +61,8 @@ Next week, we plan on combining the parts we worked on this week to create a bas
 ### Notes
 
 - [Old Croquet and Physics demo](https://super-hands-croquet.glitch.me/)
-- [Old Rapid Development App](https://aba1.glitch.me/)
 - [Voice Chat and Physics Demo - added logic for entities positions to be updated](https://cate-edit.glitch.me/)
-- [Updated Throwing App](https://aaqq.glitch.me/)
+- [Updated Throwing App](https://aba1.glitch.me/)
 
 
 ### Delivarables
