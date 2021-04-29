@@ -43,7 +43,11 @@ Correcting the comparison resolved this issue.
 
 - **Eddie:**
 
-- **Timothy:**
+- **Timothy:** I worked on updating last week's demo to publish the positions of each object, as [described above](#physics-updates-and-collision-detection). I also modified the demo to update the orientation of each user, so you can see when other users turn:
+
+![A screenshot of two separate windows, with the red dots rotating as the camera view rotates](./images/rotating_users.gif)
+
+Although the users are spheres, you can see them "rotate" when the red dots (representing their physics bodies) move.
 
 <hr>
 
