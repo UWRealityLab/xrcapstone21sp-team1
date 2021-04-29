@@ -58,12 +58,16 @@ Although the users are spheres, you can see them "rotate" when the red dots (rep
 
 ### Plans for next week
 
-Next week, we plan on making everything magically work.
+Next week, we plan on finishing the MVP by May 6th. This will entail:
+ - Updating the demo to publish each object's position, including dodgeballs
+ - Finish integrating our throwing system with Croquet (if we decide to use Croquet)
+ - Notify users when they've been hit by a dodgeball
 
 <hr>
 
 ### Blocking issues
 
+Our biggest blocking issue is (still) publishing the positions of objects through Croquet in a manner that avoids race conditions. This is only an issue if we keep using Croquet, however.
 
 <hr>
 
