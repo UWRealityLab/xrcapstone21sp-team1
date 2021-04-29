@@ -48,8 +48,8 @@ Next week, we plan on making everything magically work.
 
 ### Notes
 
-- [Voice Chat and Physics Demo - added collision detection for individual entities](https://cate-edit.glitch.me/)
-
+- [Original Voice Chat and Physics Demo - added collision detection for individual entities](https://cate-edit.glitch.me/)
+- [Voice Chat and Physics demo, but with our own throwing system added](https://cate-edit-2.glitch.me/)
 
 ### Deliverables
 
