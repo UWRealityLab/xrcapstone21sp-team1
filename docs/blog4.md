@@ -14,12 +14,23 @@ All applications described can also be found in the notes section.
 
 This week we mostly focused on [our blocking issue from last week](/xrcapstone21sp-team1/blog3#blocking-issues), which was updating the positions of objects for all users, creating the illusion that all users are in the same room. We also worked on adding our own throwing and grabbing system to our demo from last week.
 
-#### (our demo)
+#### Physics updates and collision detection
 
-A link to an app demonstrating this feature can be found [here](https://cate-edit.glitch.me/).
+We modified our [old demo](https://cate-edit.glitch.me/) in-place, so the link is the same.
 
+At the time of this writing, this demo is only configured to update the position of the yellow cylinder. This is for debugging purposes (it's much easier to read one object's logs than five of them!), although our program is set up to make updating additional objects easy.
 
-#### Throwing Balls
+#### Issue #1: Positions weren't updating at all
+
+The first issue we encountered was that the positions of objects weren't being updated at all. This obviously wasn't a great sign.
+
+Our program is set up to only update the positions of objects when they move, as this method is more efficient. We do this by comparing the matrices stored in the model and in the view. Unfortunately, this comparison was written incorrectly, causing no updates to ever be published:
+
+![Console output showing two different matrices along with the text, "ObjectView with id obj moved? false"](./images/blog4-issue1.png)
+
+Correcting the comparison resolved this issue.
+
+#### Issue #2: The objects would accelerate indefinitely
 
 
 <hr>
