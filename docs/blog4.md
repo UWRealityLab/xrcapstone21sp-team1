@@ -30,8 +30,13 @@ Our program is set up to only update the positions of objects when they move, as
 
 Correcting the comparison resolved this issue.
 
-#### Issue #2: The objects would accelerate indefinitely
+#### Issue #2: The objects would move indefinitely
 
+The next issue we found was that objects would keep moving after a collision, even long after they would've normally stopped:
+
+![A blue ball collides with a cylinder. The cylinder keeps moving to the right for both views](./images/blog4-issue2.gif)
+
+After some debugging, we found that this was because of a race condition where two views would try to update the position of the same object at once. To minimize the chances of this happening, we are working on a new system that only updates the position when there's a collision or a user picks up/catches a ball. The advantage of this system is that we can reduce the number of times when multiple views would try to update an object's position at once.
 
 <hr>
 
