@@ -1,7 +1,7 @@
 ---
-title: Blog Post 3
+title: Blog Post 4
 layout: template
-filename: blog3
+filename: blog4
 ---
 
 ## Blog Post #4 - Continuing work on MVP - April 29th, 2021
