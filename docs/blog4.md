@@ -12,6 +12,7 @@ All applications described can also be found in the notes section.
 
 ### What we accomplished
 
+This week we mostly focused on [our blocking issue from last week](/xrcapstone21sp-team1/blog3#blocking-issues), which was updating the positions of objects for all users, creating the illusion that all users are in the same room. We also worked on adding our own throwing and grabbing system to our demo from last week.
 
 #### (our demo)
 
