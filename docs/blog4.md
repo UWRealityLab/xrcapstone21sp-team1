@@ -44,7 +44,7 @@ After some debugging, we found that this was because of a race condition where t
 
 - **Clarisa:** I worked on modifying our Croquet + Physics + Voice demo from last week (the croquet's team main deliverable/demo but had a bug related not updating object positions globally) to integrate Eddie + Akash's code for throwing/grabbing balls and removing the superhands code we initially had. The demo can be found [here](https://cate-edit-2.glitch.me/) - although it is currently not working and we would need to debug it more thorougly. Based on what I see is that we correctly recieve the grab event when a user tries to grab a ball and the distance from the ball is within grab range - however for some reason the grab event doesn't occur. After meeting with Akash and Eddie - they were able to work on another version of our project without Croquet and using networked aframe. I then reviewed their code to understand it more thorougly and integrated voice into their code and helped work on a little bit of the code for how we plan on synchronizing the positions of all the balls. The plan for the weekend is to work together and finish our MVP on this version using networked aframe over croquet.
 
-- **Akash:**
+- **Akash:** I worked with Eddie to try a different approach to multiplayer using the a-frame networked component that we were already using for our voice functionality. The demo can be found [here](https://aba11.glitch.me/). We were able to get a nice system that can throw and simulate physics (except for some edge cases we have to handle) for all players in the same way. While our initial plan was to use croquet, this system seems a lot better and less buggy and also works really well with our current hands component.
 
 - **Eddie:**
 
