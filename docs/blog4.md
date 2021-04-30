@@ -54,7 +54,7 @@ In the picture above - we see a view of another user in the room. In VR Mode to 
 
 - **Akash:** I worked with Eddie to try a different approach to multiplayer using the a-frame networked component that we were already using for our voice functionality. The demo can be found [here](https://aba11.glitch.me/). We were able to get a nice system that can throw and simulate physics (except for some edge cases we have to handle) for all players in the same way. While our initial plan was to use croquet, this system seems a lot better and less buggy and also works really well with our current hands component.
 
-- **Eddie:**
+- **Eddie:** I worked with Akash on developing an alternative approach to networked physics using the networked a-frame component. The demo is the same as the one described above. Currently, we have reach a point in the demo so that physics appears to run smoothly from both a user's and observer's point of view. There are still a few ideas we want to implement for a better user expereince such as accurately synchronizing the views between different users, but overall this is working much better than with Croquet.
 
 - **Timothy:** I worked on updating last week's demo to publish the positions of each object, as [described above](#physics-updates-and-collision-detection). I also modified the demo to update the orientation of each user, so you can see when other users turn:
 
