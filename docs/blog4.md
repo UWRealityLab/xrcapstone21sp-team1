@@ -52,7 +52,7 @@ In the picture above - we see a view of another user in the room. In VR Mode to 
 
 - **Clarisa:** I worked on modifying our Croquet + Physics + Voice demo from last week to integrate Eddie + Akash's code for throwing/grabbing balls and removing the superhands code we initially had. The demo can be found [here](https://cate-edit-2.glitch.me/) - although it is currently not working and we would need to debug it more thorougly. Based on what I see is that we correctly recieve the grab event when a user tries to grab a ball and the distance from the ball is within grab range - however for some reason the grab event doesn't occur (possibly due to a Croquet issue). I also researched more about Croquet and met with Timothy to discuss how to improve our Croquet demo. I also met with Akash and Eddie - they were able to work on another version of our project without Croquet and using networked aframe for multiplayer. I then reviewed their code to understand it more thorougly and integrated voice into their code and started work on synchronizing the positions of all the balls. The plan for the weekend is to work together and finish our MVP on this version using networked aframe over croquet!
 
-- **Akash:**
+- **Akash:** I worked with Eddie to try a different approach to multiplayer using the a-frame networked component that we were already using for our voice functionality. The demo can be found [here](https://aba11.glitch.me/). We were able to get a nice system that can throw and simulate physics (except for some edge cases we have to handle) for all players in the same way. While our initial plan was to use croquet, this system seems a lot better and less buggy and also works really well with our current hands component.
 
 - **Eddie:**
 
