@@ -40,7 +40,7 @@ After some debugging, we found that this was because of a race condition where t
 
 #### Networked AFRAME Demo
 
-Due to the issues with integrating Croquet with AFRAME physics discovered and issues with object synchronization discovered by Clarisa & Timothy over the past couple of weeks - the team decided to switch to using [Networked AFRAME](https://github.com/networked-aframe/networked-aframe) for multiplayer. Our demo can be found [here](https://aba11-edit.glitch.me/) on glitch. In the demo - users are able to collaboritively join the room and in VR mode - use the grip functions on the Oculus controller to pick up and throw dodgeballs which are spawned around the room (integrates Eddies + Akash's code from last week). Additionally - voice is integrated as well.
+Due to the issues with integrating Croquet with AFRAME physics and issues with object synchronization discovered by Clarisa & Timothy over the past couple of weeks - the team decided to switch to using [Networked AFRAME](https://github.com/networked-aframe/networked-aframe) for multiplayer. Our demo can be found [here](https://aba11-edit.glitch.me/) on glitch. In the demo - users are able to collaboritively join the room and in VR mode - use the grip functions on the Oculus controller to pick up and throw dodgeballs which are spawned around the room (integrates Eddies + Akash's code from last week). Additionally - voice is integrated as well.
 
 ![](./images/networked-aframe-demo.png)
 
