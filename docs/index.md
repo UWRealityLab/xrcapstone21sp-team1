@@ -12,7 +12,7 @@ VR Dodgeball is a networked multiplayer game where players can throw virtual dod
 Read more by visiting [our blog](/xrcapstone21sp-team1/blog).
 
 # MVP Project:
-Try out our MVP using the following [link](https://cate-mvp.glitch.me/)!
+Try out our MVP using the following [link](https://cate-mvp.glitch.me/) (Does not work on browser mode so please play on headset)!
 
 # About the Team
 
