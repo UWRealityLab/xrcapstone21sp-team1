@@ -31,7 +31,7 @@ We got started with adding different rooms for the game, so multiple matches can
 
 ### Individual work log
 
-- **Clarisa:**
+- **Clarisa:** This week I worked on rooms and looking into avatar customization (usernames and picking different colors for the avatar). I also worked on our MVP presentation we presented in class on Tuesday and editing the video for that.
 
 - **Akash:** I worked with Eddie on synchronizing the physics system to add the master user, detect collisions with other players, player death, and the other quality of life changes to offset the body backwards and fix the bugs introduced with adding a master user.
 
