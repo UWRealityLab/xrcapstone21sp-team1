@@ -14,7 +14,7 @@ All applications described can also be found in the notes section.
 This week we moved over completely to using the Networked A-Frame module and worked on finalizing our MVP and smoothing out a lot of bugs we found over testing.
 
 #### Collision Between Balls
-Previously, we synchronized all the balls so that they were dynamic bodies in the owner's view and static bodies in everyone else's view. This would allow the owner to simulate the physics and everyone else to synchronize with that. But, since one can only affect the objects they own, their physics system can only update those balls. This means that the physics sytem can only accurately model the interactions between balls that share the same owner.
+Previously, we synchronized all the balls so that they were dynamic bodies in the owner's view and static bodies in everyone else's view. This would allow the owner to simulate the physics and everyone else to synchronize with that. But, since one can only affect the objects they own, their physics system can only update those balls. This means that the physics system can only accurately model the interactions between balls that share the same owner.
 To rememdy this, we decided to move to a system where everyone has local dynamic copies of the balls with which they simulate physics independanly. The ball is only networked while picked up (or other user interactions). This is fine since the balls do not simulate physics while in a user's hand. To account for any deviations between users, we select a master user that broadcasts the positions and velocities of all balls in a heartbeat.
 
 #### Collision Detection
@@ -31,13 +31,13 @@ We got started with adding different rooms for the game, so multiple matches can
 
 ### Individual work log
 
-- **Clarisa:** 
+- **Clarisa:**
 
 - **Akash:** I worked with Eddie on synchronizing the physics system to add the master user, detect collisions with other players, player death, and the other quality of life changes to offset the body backwards and fix the bugs introduced with adding a master user.
 
 - **Eddie:** I worked with Akash in implementing a mostly working networked physics system. We implemented a system of physics where each user maintains a local copy of the physics world and a master sends periodic updates of the true state of the world to synchronize all users' views. At this point, the physics seemed mostly accurate between views so we implemented collision detection to finalize the MVP.
 
-- **Timothy:** 
+- **Timothy:** I worked on a system that would display text to the user after they died, which is attached to the camera and moves around with the user. I also started working on a menu system that would allow the users to modify game settings, including potentially networked menus that would update for all users.
 
 <hr>
 
@@ -57,4 +57,3 @@ Our current implementation of the physics system relies on the master sending up
 
 ### Deliverables
 - [MVP Project](https://cate-mvp.glitch.me/)
-
