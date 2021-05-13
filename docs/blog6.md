@@ -39,6 +39,13 @@ TODO: insert picture and Timothy fill out small description.
 <hr>
 
 ### Plans for next week
+This week not too much progress due to syncing issues - had to contact networked aframe people.
+Plans for this weekend: finish up classic mode and ideally finish up lobby.
+Plans for next week: wowrk on capture the flag. (move power ups to week 9 or just don't do it). Adding capture the flag is really important.
+Capture the flag map later - no hiding spots in classic mode. regular gym setting is fine - fix walls and ceiling. make walls and ceiling look better. green button is in lobby room - press button then we rebuild the map in javascript rather then html - delete everything and put it back. rebuild the map.
+
+map: floor the same. use 3d picture for sky and use boxes to show bleachers on the side.
+
 We are a bit behind on our initial plans from our PRD. However - we think that the work we have done this week has been helpful in laying the foundation for a smooth and friendly user experience which is what we aiming for in our final product. Additionally - there have been some unforseen setbacks in the lack of documentation and general novelty of the frameworks we are using which have required more time to understand then initially planned for. Our plan for next week is to continue work on classic mode and start work on power ups.
 
 <hr>

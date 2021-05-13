@@ -27,3 +27,7 @@ filename: blog
 [Blog Post #5 - Finishing up MVP - May 6th, 2021](https://uwrealitylab.github.io/xrcapstone21sp-team1/blog5)
 
 <hr>
+
+[Blog Post #6- Working on our target product - May 13th, 2021](https://uwrealitylab.github.io/xrcapstone21sp-team1/blog6)
+
+<hr>
