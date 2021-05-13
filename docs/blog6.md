@@ -12,7 +12,7 @@ filename: blog6
 After finishing up our MVP last week - this week we started work on our target product. We continued work on avatar customization, menus, maps, and started work on implementing another game mode (classic dodgeball).
 
 #### Avatar Customization, Rooms, Teams, and Classic Dodgeball Game Mode
-We finished work on rooms so that users are able to specify which room they want to join, the team they want to play on (i.e. - picking 1 of 2 available teams), and their username. Their username and avatar color (which is specific to which team they have selected) will be synced for all users in the room. Multiple matches of dodgeball are able to be played as their are multiple rooms as well. We initially struggled and spent quite a bit of time getting avatar colors and usernames to correctly sync for all player views. This was due to a race condition but we were able to figure it out.
+We finished work on rooms so that users are able to specify which room they want to join, the team they want to play on (i.e. - picking 1 of 2 available teams), and their username. Their username and avatar color (which is specific to which team they have selected) will be synced for all users in the room. Multiple matches of dodgeball are able to be played as there are multiple rooms as well. We initially struggled and spent quite a bit of time getting avatar colors and usernames to correctly sync for all player views. This was due to a race condition but we were able to figure it out.
 
 TODO: insert picture of room form and process for joining.
 
@@ -39,7 +39,7 @@ TODO: insert picture and Timothy fill out small description.
 <hr>
 
 ### Plans for next week
-We are a bit behind on our initial plans from our PRD. However - we think that the work we have done this week has been helpful in laying the foundation for a smooth and friendly user experience. Additionally - there have been some unforseen setbacks in the lack of documentation and general novelty of the frameworks we are using which have required more time to understand then initially planned for. Our plan for next week is to continue work on classic mode and start work on power ups.
+We are a bit behind on our initial plans from our PRD. However - we think that the work we have done this week has been helpful in laying the foundation for a smooth and friendly user experience which is what we aiming for in our final product. Additionally - there have been some unforseen setbacks in the lack of documentation and general novelty of the frameworks we are using which have required more time to understand then initially planned for. Our plan for next week is to continue work on classic mode and start work on power ups.
 
 <hr>
 
