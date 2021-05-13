@@ -57,3 +57,5 @@ Our current implementation of the physics system relies on the master sending up
 
 ### Deliverables
 - [MVP Project](https://cate-mvp.glitch.me/)
+- [MVP Project Video](https://www.youtube.com/watch?v=7XiQ-mCux0g)
+- [MVP Slides](https://docs.google.com/presentation/d/1hU-O8TumBczr57Y7Ntd04c_QyvmYnxs_vwek4WdK59w/edit#slide=id.gd6ba44cdbb_1_34)
