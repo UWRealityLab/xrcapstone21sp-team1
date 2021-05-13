@@ -28,6 +28,6 @@ filename: blog
 
 <hr>
 
-[Blog Post #6- Working on our target product - May 13th, 2021](https://uwrealitylab.github.io/xrcapstone21sp-team1/blog6)
+[Blog Post #6 - Working on our target product - May 13th, 2021](https://uwrealitylab.github.io/xrcapstone21sp-team1/blog6)
 
 <hr>
