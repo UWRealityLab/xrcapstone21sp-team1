@@ -37,7 +37,7 @@ There is also a toggle button pictured - in the future, we want to update the me
 
 - **Akash:**
 
-- **Eddie:**
+- **Eddie:** I worked on implementing classic mode with Akash. We made it so that a user can specify a team upon joining a room. User colors would then be set and you would not be able to knock out those on the same team as you. You would still be able to knock out those on opposing teams. We also added nametags that rotated so that you would always be able to see another player's name regardless of the direction they are facing.
 
 - **Timothy:** I worked on implementing [in-game menus](#in-game-menus) as described above. One issue I encountered was that networked aframe performs better when entities are created after the DOM loads, rather than being explicitly declared in HTML. To solve this, I made the menus are hidden by default. Another issue that I am currently working on is that the [aframe gui library](https://github.com/rdub80/aframe-gui) that I am currently working on does not work with networked aframe very well, so the menus will likely be manually updated.
 
