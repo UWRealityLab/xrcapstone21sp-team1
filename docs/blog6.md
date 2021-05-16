@@ -35,7 +35,7 @@ There is also a toggle button pictured - in the future, we want to update the me
 
 - **Clarisa:** I spent some time working on redoing our video for our MVP as requested by the staff. I also worked on looking for dodgeball court models to use for classic mode. Additionally - I worked on avatar customization and this blog post as well/was team lead.
 
-- **Akash:**
+- **Akash:** I worked on fixing our blocking issue from last week to handle lag. We implemented a system where the last user to interact with a ball is the master of that ball, and the thrower always detects collisions instead of the person being hit. This way since the person doing the corrections is the one detecting the collisions, there is no race condition where they don't detect a collision. I also worked with Eddie to implement classic mode, and implemented the game logic behind teams. We also had a major blocking issue where colors and usernames were not syncing. I contacted the people from NAF on slack and it turns out it is a race condition due to the NAF schemas not being registered before it starts syncing. After adding a workaround, everything was syncing correctly. Finally, we worked on making usernames always face the camera so that everyone can always see everyone else's usernames.
 
 - **Eddie:** I worked on implementing classic mode with Akash. We made it so that a user can specify a team upon joining a room. User colors would then be set and you would not be able to knock out those on the same team as you. You would still be able to knock out those on opposing teams. We also added nametags that rotated so that you would always be able to see another player's name regardless of the direction they are facing.
 
