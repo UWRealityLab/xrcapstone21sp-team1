@@ -7,11 +7,11 @@ filename: index
 
 # What is VR Dodgeball?
 
-VR Dodgeball is a networked multiplayer game where players can throw virtual dodgeballs at each other built with AFRAME. This gives people a fun way to exercise and destress, especially in a pandemic where in-person games of dodgeball aren't as practical. VR Dodgeball is currently available on the Oculus Quest 2. Demo our project with all of our most recent additions [here](https://aba40.glitch.me/)! Note: only available for play on the headset.
-
-Read more by visiting [our blog](/xrcapstone21sp-team1/blog).
+VR Dodgeball is a networked multiplayer game  built with AFRAME where players can play virtual dodgeball. This gives people a fun way to exercise and destress, and interact with others, especially in a pandemic where in-person games of dodgeball aren't as practical. VR Dodgeball is currently available on the Oculus Quest 2. Demo our project with all of our most recent additions [here](https://aba40.glitch.me/)! Note: only available for play on the headset.
 
 <img src="images/main.png">
+
+Read more by visiting [our blog](/xrcapstone21sp-team1/blog).
 
 # MVP:
 Try out our MVP using the following [link](https://cate-mvp.glitch.me/)! (Does not work on browser mode so please play on headset)
