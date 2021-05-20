@@ -31,3 +31,7 @@ filename: blog
 [Blog Post #6 - Working on our target product - May 13th, 2021](https://uwrealitylab.github.io/xrcapstone21sp-team1/blog6)
 
 <hr>
+
+[Blog Post #7 - Wrapping Up Classic Mode - May 19th, 2021](https://uwrealitylab.github.io/xrcapstone21sp-team1/blog7)
+
+<hr>
