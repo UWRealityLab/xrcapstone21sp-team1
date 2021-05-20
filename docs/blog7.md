@@ -39,7 +39,11 @@ We previously received some feedback to make "better looking" avatars. Thanks to
 Later on, we intend to add more colors and more avatars. But moving away from our original cube and sphere avatar makes it much more difficult to indicate a player's death. Previously, we would simply change the color to be red, but changing the color is not as easy when using models as it would require us to switch out the model to a different colored one. Instead, we are considering just changing the nametag to a red font or adding some marker above the player to indicate that they have died to everyone.
 
 #### Menus
-We created an in-game menu demo that would allow users to specify a team. The menu will then show all the users that have joined a specific team. Next week, we plan on combining that demo with the classic mode demo.
+We created an in-game menu demo that would allow users to specify a team:
+
+![the menu open in two clients side by side, showing how the menu state is updated across all users](./images/blog7-menu2.gif)
+
+The menu will then show all the users that have joined a specific team. Next week, we plan on combining that demo with the classic mode demo. Note that there are some additional GUI elements present - the toggle box and the drop down menu. These were added for testing and may not be used for our final product.
 
 ### Individual work log
 
@@ -49,7 +53,7 @@ We created an in-game menu demo that would allow users to specify a team. The me
 
 - **Eddie:** I worked on completing classic mode with Akash. We designed the map as well as implemented the boundaries that constrained both the balls and the avatars. We also implemented the basic rules of classic dodgeball.
 
-- **Timothy:**
+- **Timothy:** I worked on creating the in-game menu as described above. After creating a successful proof of concept that showed networked menus were possible, I added an existing [aframe GUI library](https://github.com/rdub80/aframe-gui/) to make the menus look nicer and improve functionality.
 
 <hr>
 
