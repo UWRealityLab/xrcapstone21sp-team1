@@ -67,4 +67,4 @@ We were planning on having classic mode completed by last week at the latest, so
 - None
 
 ### Deliverables
-- [Demo for this week](https://aba38.glitch.me/)
+- [Demo for this week](https://aba40.glitch.me/)
