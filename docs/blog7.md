@@ -43,7 +43,7 @@ We created an in-game menu demo that would allow users to specify a team. The me
 
 ### Individual work log
 
-- **Clarisa:**
+- **Clarisa:** This week I worked on created the flag assets for capture the flag in Blender and also worked on documenting our code/cleaning it up a bit. I also worked on preparing for demo day and started work on trying to modify the map asset for capture the flag.
 
 - **Akash:** I worked on completing classic mode with Eddie. We modified the map that we got for classic mode to include a dodgeball court, to have enough performance, and created a NavMesh for it. I also created some robot avatar models that look a lot better than our previous avatars.
 
