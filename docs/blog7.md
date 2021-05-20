@@ -25,10 +25,6 @@ We found a 3D model online that we thought would make a nice map. A screenshot o
 
 ![top-down view](./images/teams-map.png)
 
-We needed to repurpose the center court so that it would have lines corresponding to a dodgeball court rather than a basketball court, so we modified it so that it looked like the image below:
-
-![the court](./images/court.png)
-
 Overall, this is how the map looks in game:
 
 ![in game](./images/in-game.png)
