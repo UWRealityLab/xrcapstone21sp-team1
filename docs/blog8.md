@@ -46,7 +46,7 @@ As mentioned last week, changing the avatar makes indicating when a player has d
 
 - **Eddie:**
 
-- **Timothy:**
+- **Timothy:** I worked on integrating the menus with classic mode, including handling teleportation, making the menu display on startup, and making players join automatically. I also added a drop down menu for selecting the game mode to use (although the drop down doesn't actually change anything yet).
 
 <hr>
 
