@@ -35,3 +35,6 @@ filename: blog
 [Blog Post #7 - Wrapping Up Classic Mode - May 19th, 2021](https://uwrealitylab.github.io/xrcapstone21sp-team1/blog7)
 
 <hr>
+
+[Blog Post #8 - Starting Capture the Flag Mode - May 26th, 2021](https://uwrealitylab.github.io/xrcapstone21sp-team1/blog8)
+<hr>
