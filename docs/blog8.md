@@ -9,7 +9,7 @@ filename: blog8
 <hr>
 
 ### What we accomplished
-This week, we began work on the capture the flag mode. Specifically, we finished work on a new map and NavMesh, as the capture the flag mode needs a more open field than classic mode. We also began working on implementing the new ruleset and finished integrating the networked menus from last week. Next week, we plan to finish up classic mode and begin working on another game mode.
+This week, we began work on the capture the flag mode. Specifically, we finished work on a new map and NavMeshes, as the capture the flag mode needs a more open field than classic mode. We also finished integrating the networked menus from last week with the classic mode demo. Next week, we plan to finish up classic mode and begin working on another game mode.
 
 #### The capture the flag map
 We found another 3D model online that we plan on using as the map for the capture the flag mode. Here is a screenshot of what the map looks like inside the game:
@@ -64,4 +64,5 @@ We initially planned to start working on power ups this week, so we are still be
 - None
 
 ### Deliverables
-- [Demo for this week](https://aba44.glitch.me/)
+- [Classic mode integrated with networked menus](https://aba44.glitch.me/)
+- [Capture the flag mode](https://aba45.glitch.me/)
