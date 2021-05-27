@@ -46,7 +46,7 @@ As mentioned last week, changing the avatar makes indicating when a player has d
 
 - **Eddie:**
 
-- **Timothy:** I worked on integrating the menus with classic mode, including handling teleportation, making the menu display on startup, and making players join automatically. I also added a drop down menu for selecting the game mode to use (although the drop down doesn't actually change anything yet).
+- **Timothy:** I worked on integrating the menus with classic mode, including handling teleportation, making the menu display on startup, and making players join automatically. I also added a drop down menu for selecting the game mode to use (although I did not add the functionality to change the map, just the GUI element).
 
 <hr>
 
@@ -65,4 +65,4 @@ We initially planned to start working on power ups this week, so we are still be
 
 ### Deliverables
 - [Classic mode integrated with networked menus](https://aba44.glitch.me/)
-- [Capture the flag mode](https://aba45.glitch.me/)
+- [Capture the flag mode](https://aba47.glitch.me/)
