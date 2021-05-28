@@ -40,7 +40,7 @@ As mentioned last week, changing the avatar makes indicating when a player has d
 
 ### Individual work log
 
-- **Clarisa:**
+- **Clarisa:** This week I worked with Timothy on integrating in-game menus with classic mode - ensuring that users are able to join different teams and start the game from the menu. I also worked on the form for randomizing the room names/usernames and adding an indicator to the start button which asks if users are sure they want to start the game as once the game is started it will close the room for other players. 
 
 - **Akash:**
 
@@ -51,7 +51,7 @@ As mentioned last week, changing the avatar makes indicating when a player has d
 <hr>
 
 ### Plans for next week
-We initially planned to start working on power ups this week, so we are still behind our PRD. Our plan for next week is to finish up capture the flag and begin working on a third game mode (probably protect the point). Because we no longer have menus to integrate, we hope that this process will go by faster than in previous weeks, because there won't be as many action items dividing our attention. Also, one of our team members should have much more free time after the 31st (the final project for another class is due then), which should hopefully increase our productivity.
+We initially planned to start working on power ups this week, so we are still behind our PRD. Our plan for next week is to finish up capture the flag and begin working on a third game mode (probably protect the point) if there is time. Because we no longer have menus to integrate, we hope that this process will go by faster than in previous weeks, because there won't be as many action items dividing our attention. Also, one of our team members should have much more free time after the 31st (the final project for another class is due then), which should hopefully increase our productivity. Additionally - we want to polish our app as much as possible and will most likely spend a fair amount of time making our final video/preparing for our final presentation.
 
 <hr>
 
