@@ -42,9 +42,9 @@ As mentioned last week, changing the avatar makes indicating when a player has d
 
 - **Clarisa:** This week I worked with Timothy on integrating in-game menus with classic mode - ensuring that users are able to join different teams and start the game from the menu. I also worked on the form for randomizing the room names/usernames and adding an indicator to the start button which asks if users are sure they want to start the game as once the game is started it will close the room for other players. 
 
-- **Akash:**
+- **Akash:** I worked with Eddie on implementing Capture the flag. After acquiring the map model we built a navmesh model on blender that we used to restrict movement. Then we worked on the code that switches to the correct map and started working on the functionality for capture the flag.
 
-- **Eddie:**
+- **Eddie:** I worked on implementing the rules for capture the flag with Akash, and made it so that players can switch between game modes easily.
 
 - **Timothy:** I worked on integrating the menus with classic mode, including handling teleportation, making the menu display on startup, and making players join automatically. I also added a drop down menu for selecting the game mode to use (although I did not add the functionality to change the map, just the GUI element).
 
