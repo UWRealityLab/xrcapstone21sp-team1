@@ -12,8 +12,8 @@ filename: blog9
 This week we finished up work on capture the flag mode and worked on our PR Video and final demonstration. We also spent this week polishing up our app and tying up last minute strings in order to wrap up our project.
 
 #### Wrapping up Capture the Flag
-In order to finish Capture the Flag mode - we spent time this week adding physics colliders throughout our map and adding the game logic. For the physics colliders - we went through and added physics bodies to all of the trees and objects on the map as well as adding walls to the back of the map so that players and dodgeballs aren't able to go through them. 
-For the game logic - we implemented the logic in the game lobby where upon start and if the capture the flag game mode is selected in the drop down menu that all players in the room will be teleported to the new map for capture the flag. Additionally - players will be appropiately spawned on their teams respective base. We added the logic for allowing players to pick up and move the flag and the winning condition for if a team brings the opposing teams flag back to their base. If a team has won - victory will be displayed on their headset and if a team has lost - defeat will be displayed on their headset. We also added the logic for respawning balls which fall off the map on the opposing teams side.
+In order to finish Capture the Flag mode - we spent time this week adding physics colliders throughout our map and adding the game logic. For the physics colliders - we went through and added physics bodies to all of the trees and objects on the map as well as adding walls to the back of the map so that players and dodgeballs aren't able to go through them.
+For the game logic - we implemented the logic in the game lobby where upon start and if the capture the flag game mode is selected in the drop down menu that all players in the room will be teleported to the new map for capture the flag. Additionally - players will be appropriately spawned on their teams respective base. We added the logic for allowing players to pick up and move the flag and the winning condition for if a team brings the opposing teams flag back to their base. If a team has won - victory will be displayed on their headset and if a team has lost - defeat will be displayed on their headset. We also added the logic for respawning balls which fall off the map on the opposing teams side.
 
 Below shows a video of a game play of our new capture the flag mode:
 <iframe width="660" height="415" src="https://www.youtube.com/embed/zTA3DkfFoVM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -28,11 +28,11 @@ Below shows a video of a game play of classic mode with the new victory message 
 
 - **Clarisa:** This week I worked with the team to help finish adding physics colliders to the capture the flag map. I also worked on the final presentation script/slides & our final PR video - as well as various housekeeping items with the website. I also worked on this blog post.
 
-- **Akash:** 
+- **Akash:**
 
-- **Eddie:** 
+- **Eddie:**
 
-- **Timothy:** 
+- **Timothy:** I worked on adding physics colliders for the trees in the capture the flag map and also worked on various quality-of-life improvements, including removing raycasters once the game starts and making sure the game still works without microphone permissions are denied. I also researched various hosting methods in case we want to preserve our project after the quarter ends.
 
 <hr>
 
