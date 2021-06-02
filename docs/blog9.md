@@ -9,13 +9,17 @@ filename: blog9
 <hr>
 
 ### What we accomplished
-This week we finished up work on capture the flag mode and worked on our PR Video and final demonstration. We spent this week polishing up our app and tying up last minute strings in order to wrap up our project.
+This week we finished up work on capture the flag mode and worked on our PR Video and final demonstration. We also spent this week polishing up our app and tying up last minute strings in order to wrap up our project.
 
-#### Adding Physics Colliders to Capture the Flag Map
+#### Wrapping up Capture the Flag
+In order to finish Capture the Flag mode - we spent time this week adding physics colliders throughout our map and adding the game logic. For the physics colliders - we went through and added physics bodies to all of the trees and objects on the map as well as adding walls to the back of the map so that players and dodgeballs aren't able to go through them. 
+For the game logic - we implemented the logic in the game lobby where upon start and if the capture the flag game mode is selected in the drop down menu that all players in the room will be teleported to the new map for capture the flag. Additionally - players will be appropiately spawned on their teams respective base. We added the logic for allowing players to pick up and move the flag and the winning condition for if a team brings the opposing teams flag back to their base. If a team has won - victory will be displayed on their headset and if a team has lost - defeat will be displayed on their headset. We also added the logic for respawning balls which fall off the map on the opposing teams side.
 
+Below shows a video of a game play of our new capture the flag mode:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zTA3DkfFoVM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### Additional Improvements
-We 
+### Additional Improvements - Polishing App
+As mentioned above - we spent some time polishing up our app and making various improvements. In previous versions - if microphone permission was not given the app would not start. We fixed it so that that the app will now start without microphone permissions. We also removed the laser/raycasters from the controllers which are used for menu selection once the game starts as when the game has begun - players are not able to open the menu anymore. Additionally - we went back and added a victory state to capture the flag mode where if all of the members of the opposing team have been eliminated then a victory message will be displayed for the winning team (and a defeat message will be displayed for the losing team).
 
 ### Individual work log
 
