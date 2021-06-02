@@ -9,7 +9,7 @@ filename: index
 
 VR Dodgeball is a networked multiplayer game  built with AFRAME where players can play virtual dodgeball. This gives people a fun way to exercise and destress, and interact with others, especially in a pandemic where in-person games of dodgeball aren't as practical. VR Dodgeball is currently available on the Oculus Quest 2. 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/HoFF9onY47g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="660" height="415" src="https://www.youtube.com/embed/HoFF9onY47g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 # Deliverables
 

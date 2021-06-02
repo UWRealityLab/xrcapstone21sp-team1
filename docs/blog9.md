@@ -16,17 +16,17 @@ In order to finish Capture the Flag mode - we spent time this week adding physic
 For the game logic - we implemented the logic in the game lobby where upon start and if the capture the flag game mode is selected in the drop down menu that all players in the room will be teleported to the new map for capture the flag. Additionally - players will be appropiately spawned on their teams respective base. We added the logic for allowing players to pick up and move the flag and the winning condition for if a team brings the opposing teams flag back to their base. If a team has won - victory will be displayed on their headset and if a team has lost - defeat will be displayed on their headset. We also added the logic for respawning balls which fall off the map on the opposing teams side.
 
 Below shows a video of a game play of our new capture the flag mode:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/zTA3DkfFoVM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="660" height="415" src="https://www.youtube.com/embed/zTA3DkfFoVM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Additional Improvements - Polishing App
 As mentioned above - we spent some time polishing up our app and making various improvements. In previous versions - if microphone permission was not given the app would not start. We fixed it so that that the app will now start without microphone permissions. We also removed the laser/raycasters from the controllers which are used for menu selection once the game starts as when the game has begun - players are not able to open the menu anymore. Additionally - we went back and added a victory state to capture the flag mode where if all of the members of the opposing team have been eliminated then a victory message will be displayed for the winning team (and a defeat message will be displayed for the losing team).
 
 Below shows a video of a game play of classic mode with the new victory message being displayed:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/CyolL3wHTik" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="660" height="415" src="https://www.youtube.com/embed/CyolL3wHTik" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Individual work log
 
-- **Clarisa:** This week I worked with the team to help finish adding physics colliders to the capture the flag map. I also worked on the final presentation script/slides & our final PR video - as well as various housekeeping items with the website.
+- **Clarisa:** This week I worked with the team to help finish adding physics colliders to the capture the flag map. I also worked on the final presentation script/slides & our final PR video - as well as various housekeeping items with the website. I also worked on this blog post.
 
 - **Akash:** 
 
