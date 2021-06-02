@@ -67,9 +67,10 @@
         margin-left: 0; } }
 
   .page-header {
+    color: #fff;
     text-align: center;
-    opacity: 0.4;
-    background-image: url(../images/main.png) }
+    opacity: 0.6;
+    background-image: url(../images/main-crop.png) }
 
   @media screen and (min-width: 64em) {
     .page-header {
