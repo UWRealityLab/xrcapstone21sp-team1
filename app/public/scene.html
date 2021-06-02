@@ -1,0 +1,404 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Multiplayer Dodgeball</title>
+    <link href="/styles/scene.css" rel="stylesheet" type="text/css">
+    
+    <!--  Aframe and aframe extras  -->
+    <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v6.1.1/dist/aframe-extras.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+    
+    <!--   Networked componenets   -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.slim.js"></script>
+    <script src="/easyrtc/easyrtc.js"></script>
+    <script src="https://unpkg.com/networked-aframe/dist/networked-aframe.min.js"></script>
+    <script src="https://rawgit.com/fernandojsg/aframe-teleport-controls/master/dist/aframe-teleport-controls.min.js"></script>
+    
+    <!--   Aframe physics   -->
+    <script src="https://cdn.jsdelivr.net/gh/n5ro/aframe-physics-system@v4.0.1/dist/aframe-physics-system.min.js"></script>
+    <script src="https://unpkg.com/aframe-physics-extras/dist/aframe-physics-extras.min.js"></script>
+    
+    <!--   Custom scripts   -->
+    <script src="scripts/initialize.js"></script>
+    <script src="scripts/audio-source-creator.js"></script>
+    <script src="scripts/master.js"></script>
+    <script src="scripts/spawn-in-circle.js"></script>
+    <script src="scripts/leave.js"></script>
+    <script src="scripts/grab-ball.js"></script>
+    <script src="scripts/collision-detector.js"></script>
+    <script src="scripts/ball-killer.js"></script>
+    <script src="scripts/body-position.js"></script>
+    <script src="scripts/dynamic-room.js"></script>
+    <script src="scripts/metadata.js"></script>
+    <script src="scripts/ball-respawner.js"></script>
+    
+    <!--   In game menu   -->
+    <script src="scripts/menu/aframe-gui.component.js"></script>
+    <script src="scripts/menu/spawner.component.js"></script>
+    <script src="scripts/menu/toggle-ownership.component.js"></script>
+    <script src="scripts/menu/intersect-color-change.component.js"></script>
+    <script src="scripts/menu/key-presser.component.js"></script>
+    <script src="scripts/menu/button-presser.component.js"></script>
+    <script src="scripts/menu/toggle-visibility.component.js"></script>
+    <script src="scripts/menu/menu-sender.component.js"></script>
+    <script src="scripts/menu/menu-receiver.component.js"></script>
+    <script src="scripts/menu/join-button-visibility.component.js"></script>
+    <script src="scripts/menu/player-list-sender.component.js"></script>
+    <script src="scripts/menu/player-list-receiver.component.js"></script>
+    <script src="scripts/menu/dropdown-menu-sender.component.js"></script>
+    <script src="scripts/menu/dropdown-menu-receiver.component.js"></script>
+  </head>
+  <body>
+    <a-scene dynamic-room key-presser gui-env physics="debug: false; restitution: 0.5; iterations: 1000" master>
+      <!--    Assets    -->
+      <a-assets>
+        <!--    Items     -->
+        <!--    Note: map assets removed due to private license      -->
+        <a-asset-item id="classic-scene" src=""></a-asset-item>
+        <a-asset-item id="classic-navmesh" src=""></a-asset-item>
+        <a-asset-item id="ctf-scene" src=""></a-asset-item>
+        <a-asset-item id="ctf-navmesh" src=""></a-asset-item>
+        <a-asset-item id="head-blue" src="https://cdn.glitch.com/56047aa3-9a3d-44b6-9929-a7c8fe28ba1c%2FRobot%20head%20blue.gltf?v=1621438086393"></a-asset-item>
+        <a-asset-item id="body-blue" src="https://cdn.glitch.com/56047aa3-9a3d-44b6-9929-a7c8fe28ba1c%2FRobot%20body%20blue.gltf?v=1621438093899"></a-asset-item>
+        <a-asset-item id="hand-blue" src="https://cdn.glitch.com/56047aa3-9a3d-44b6-9929-a7c8fe28ba1c%2FRobot%20hand%20blue.gltf?v=1621439971435"></a-asset-item>
+        <a-asset-item id="head-red" src="https://cdn.glitch.com/56047aa3-9a3d-44b6-9929-a7c8fe28ba1c%2FRobot%20head%20red.gltf?v=1621438656223"></a-asset-item>
+        <a-asset-item id="body-red" src="https://cdn.glitch.com/56047aa3-9a3d-44b6-9929-a7c8fe28ba1c%2FRobot%20body%20red.gltf?v=1621438663609"></a-asset-item>
+        <a-asset-item id="hand-red" src="https://cdn.glitch.com/56047aa3-9a3d-44b6-9929-a7c8fe28ba1c%2FRobot%20hand%20red.gltf?v=1621439921250"></a-asset-item>
+        <a-asset-item id="blueFlag-asset" src="https://cdn.glitch.com/e0cc18d9-6eff-4f70-8f4e-22e0e5015c30%2Fflag-blue.gltf?v=1622182091795"></a-asset-item>
+        <a-asset-item id="redFlag-asset" src="https://cdn.glitch.com/e0cc18d9-6eff-4f70-8f4e-22e0e5015c30%2Fflag-red.gltf?v=1622182098731"></a-asset-item>
+        
+        <!--    Templates     -->
+        <template id="avatar-template">
+          <a-entity class="avatar">
+            <a-sphere class="head" color="#444340" radius="0.16" static-body collision-detector position="0 0 0.1" visible="false"></a-sphere>
+            <a-entity class="nametag" text="value: Hello World; align:center;" position="0 0.5 0.1" rotation="0 180 0" scale="4 4 4" body-position></a-entity>
+            <a-entity class="head-mesh" position="0 0 0.1"></a-entity>
+          </a-entity>
+        </template>
+
+        <template id="player-template"> <a-entity class="player" audio-source-creator></a-entity> </template>
+
+        <template id="hand-template">
+          <a-entity class="hand">
+            <a-entity class="fingers" rotation="135 10 0" position="0 0 0.06" scale="0.75 1 1"></a-entity>
+          </a-entity>
+        </template>
+        
+        <template id="ball-template">
+            <a-sphere class="ball" radius="0.1" color="#EF2D5E" static-body></a-sphere>
+        </template>
+        
+        <template id="body-template">
+          <a-entity class="body"> 
+            <a-box class="body-hitbox" color="#444340" width="0.5" depth="0.2" static-body collision-detector visible="false"></a-box>
+            <a-entity class="body-mesh"></a-entity>
+          </a-entity>
+        </template>
+        
+        <template id="flag-template">
+          <a-entity class="flag" rotation="0 90 0" scale="0.25 0.25 0.25"></a-entity>
+        </template>
+        
+        <template id="menu-template">
+          <a-entity toggle-visibility class="menu">
+            <a-gui-flex-container
+              flex-direction="column" justify-content="center" align-items="normal" component-padding="0.1"
+              opacity="0.5" width="6" height="9" panel-color="#000" panel-rounded="0.1"
+              position="0 2.5 0" rotation="0 180 0"
+              >
+              <!--        Start button        -->
+              <a-gui-button
+                id="start-btn"
+                width="2.5" 
+                height="0.7" 
+                base-depth="0.05" 
+                depth="0.2"
+                gap="0.1"
+                radius="0"
+                value="Start"
+                font-size="0.35"
+                margin="0.5 0 -1.5 0"
+                toggle="false"
+                intersect-color-change
+                toggle-ownership
+                start-button>
+              </a-gui-button>
+              
+              <a-gui-label
+                width="2.5" height="0.75"
+                value="Teams:"
+                opacity="0"
+                background-color="#000"
+                font-size="0.35"
+                font-color="#FFF"
+                line-height="0.8"
+                letter-spacing="0"
+                margin="0 0 0.05 0"
+              >
+              </a-gui-label>
+              
+              <!--       Team 1         -->
+              <a-gui-flex-container
+                flex-direction="row" justify-content="center" align-items="normal" component-padding="0.1"
+                opacity="0.5" width="6" height="5.25" panel-color="#000" panel-rounded="0.1"
+                position="0 0 0" rotation="0 0 0"
+              >
+                
+                <a-gui-flex-container
+                  flex-direction="column" align-items="normal" component-padding="0.1"
+                  opacity="0.5" width="3" height="5.25" panel-color="blue" panel-rounded="0.1"
+                  position="-1 0 0" rotation="0 0 0"
+                >
+                  <a-gui-label
+                    width="2.5" height="0.5"
+                    id="team1-display"
+                    value="Team 1:"
+                    opacity="0"
+                    background-color="#000"
+                    font-size="0.23"
+                    font-color="#FFF"
+                    line-height="0.8"
+                    letter-spacing="0"
+                    margin="0 0 0.05 0"
+                  >
+                  </a-gui-label>
+                  <a-gui-button
+                    id="join-btn1"
+                    class="join-btn"
+                    width="2.5" 
+                    height="0.7" 
+                    base-depth="0.05" 
+                    depth="0.2"
+                    gap="0.1"
+                    radius="0"
+                    value="Join"
+                    font-size="0.35"
+                    margin="0 0 0.05 0"
+                    toggle="false"
+                    player-list-sender
+                    join-button-visibility
+                    intersect-color-change
+                    toggle-ownership
+                  >
+                  </a-gui-button>
+                  <a-gui-flex-container
+                    flex-direction="column" align-items="normal" component-padding="0.1"
+                    opacity="0.5" width="3" height="5.25" panel-color="blue" panel-rounded="0.1"
+                    position="-1 0 0" rotation="0 0 0" player-list-receiver="teamName: 1" class="playerlist"
+                  >
+                  </a-gui-flex-container>
+                </a-gui-flex-container>
+                <!--        Team 2          -->
+                <a-gui-flex-container
+                  flex-direction="column" align-items="normal" component-padding="0.1"
+                  opacity="0.5" width="3" height="5.25" panel-color="red" panel-rounded="0.1"
+                  position="1 0 0" rotation="0 0 0"
+                >
+                  <a-gui-label
+                    width="2.5" height="0.5"
+                    id="team2-display"
+                    value="Team 2:"
+                    opacity="0"
+                    background-color="#000"
+                    font-size="0.23"
+                    font-color="#FFF"
+                    line-height="0.8"
+                    letter-spacing="0"
+                    margin="0 0 0.05 0"
+                  >
+                  </a-gui-label>
+                  <a-gui-button
+                    id="join-btn2"
+                    class="join-btn"
+                    width="2.5" 
+                    height="0.7" 
+                    base-depth="0.05" 
+                    depth="0.2"
+                    gap="0.1"
+                    radius="0"
+                    value="Join"
+                    font-size="0.35"
+                    margin="0 0 0.05 0"
+                    toggle="false"
+                    player-list-sender
+                    join-button-visibility
+                    intersect-color-change
+                    toggle-ownership
+                  >
+                  </a-gui-button>
+                  <a-gui-flex-container
+                    flex-direction="column" align-items="normal" component-padding="0.1"
+                    opacity="0.5" width="3" height="5.25" panel-color="red" panel-rounded="0.1"
+                    position="-1 0 0" rotation="0 0 0" player-list-receiver="teamName: 2" class="playerlist"
+                  >
+                  </a-gui-flex-container>
+                </a-gui-flex-container>
+              </a-gui-flex-container>
+            </a-gui-flex-container>
+            <!--       Drop down menu for game mode selection       -->
+            <a-entity position="0 6.5 0" rotation="0 180 0">
+              <a-entity id="dropdownContainer">
+                <a-gui-icon-label-button
+                  id="mydropdown"
+                  width="2.5" height="0.75"
+                  onclick="openDropdown"
+                  icon="f0c9"
+                  icon-font="assets/fonts/fa-solid-900.ttf"
+                  value="Classic"
+                  font-size="0.2"
+                  visible="true"
+                  animation__rotateIn="property: rotation; to: 180 0 0; dur: 300; startEvents:opendropdown"
+                  animation__visibleIn="property: visible; to: false; delay: 300; startEvents:opendropdown"
+                  animation__rotateOut="property: rotation; to: 0 0 0; dur: 0; startEvents:closedropdown"
+                  intersect-color-change
+                  toggle-ownership
+                  dropdown-menu-sender
+                  dropdown-menu-receiver
+                >	
+                </a-gui-icon-label-button>				
+
+                <a-gui-flex-container
+                  id="myoptions"
+                  flex-direction="column" justify-content="center" align-items="normal" component-padding="0.1" 
+                  opacity="0" width="2.5" height="0.75"
+                  position="0 -1 -0.15" rotation="0 0 0" scale="1 0.001 0.001"
+                  visible="false" 
+                  animation__positionIn="property: position; to: 0 0.375 0.15; dur: 300; startEvents:opendropdown"
+                  animation__scaleIn="property: scale; to: 1 1 1; dur: 300; startEvents:opendropdown"
+                  animation__visibleIn="property: visible; to: true; dur: 100; startEvents:opendropdown"
+                  animation__positionOut="property: position; to: 0 0 -0.15; dur: 300; startEvents:closedropdown"
+                  animation__scaleOut="property: scale; to: 1 0.001 0.001; dur: 300; startEvents:closedropdown"
+                  animation__visibleOut="property: visible; to: false; dur: 100; delay: 300; startEvents:closedropdown"
+                >
+                  <a-gui-button 
+                    width="2.5" height="0.75"
+                    onclick="selectHandler"
+                    font-size="0.2"
+                    value="Classic"
+                  >
+                  </a-gui-button>
+                  <a-gui-button 
+                    width="2.5" height="0.75"
+                    onclick="selectHandler"
+                    font-size="0.2"
+                    value="Capture the flag"
+                  >
+                  </a-gui-button>
+<!--                   <a-gui-button 
+                    width="2.5" height="0.75"
+                    onclick="selectHandler"
+                    font-size="0.3"
+                    value="unknown mode"
+                  >
+                  </a-gui-button>
+-->
+                  <a-gui-icon-button
+                    height="0.5"
+                    onclick="closeDropdown"
+                    icon="f00d"
+                    icon-font="assets/fonts/fa-solid-900.ttf"
+                  >
+                  </a-gui-icon-button>					
+                </a-gui-flex-container>
+              </a-entity>
+            </a-entity>
+          </a-entity>
+        </template>
+      </a-assets>
+      
+      <!--    Connect templates to networked entity (nested templates)    -->
+      <a-entity id="player" movement-controls="speed: 0.1; constrainToNavMesh: true; controls: checkpoint, gamepad, trackpad, touch, keyboard;" position="0 0 0" rotation="0 0 0" spawn-in-circle="radius:3" two="three" spawner="template:#menu-template">
+        <!-- Head, Nametag, and Camera -->
+        <a-entity id="avatar" camera="active: true" position="0 1.3 0" look-controls>
+          <a-sphere id="head-hitbox" class="head-mesh" body-position scale="0.15 0.17 0.13" static-body="shape: sphere; sphereRadius: 0.16" visible="false"></a-sphere>
+          <a-entity id="username" class="nametag"></a-entity>
+        </a-entity>
+        
+        <!--    Body     -->
+        <a-entity id="body" body-position width="0.5" depth="0.2"></a-entity>
+        
+        <!-- Right Controller -->
+        <a-entity id="rightHand" grab-ball laser-controls="hand: right" oculus-touch-controls="hand: right" visible="true" button-presser raycaster="objects: [gui-interactable]">
+          <a-entity class="fingers" visible="false"></a-entity>
+          <a-entity class="centerOfMass" position="0 -0.01 0.045"></a-entity>
+        </a-entity>
+
+        <!-- Left Controller -->
+        <a-entity id="leftHand" grab-ball laser-controls="hand: left" oculus-touch-controls="hand: left" visible="true" button-presser raycaster="objects: [gui-interactable]">
+          <a-entity class="fingers" visible="false"></a-entity>
+          <a-entity class="centerOfMass" position="0 -0.01 0.045"></a-entity>
+        </a-entity>   
+        
+      </a-entity>
+      
+      <!--   Cursors / Raycasters     -->
+      <a-entity id="mouseCursor" cursor="rayOrigin: mouse" raycaster="objects: [gui-interactable]"></a-entity>
+      <a-entity id="mouseCursor2" cursor="rayOrigin: mouse" raycaster="objects: a-sphere #player .player"></a-entity>
+          
+      <!--    Load model for map    -->
+      <a-entity id="map" gltf-model="#classic-scene" position="0 0 0"></a-entity>
+      <a-entity id="navmesh-entity" gltf-model="#classic-navmesh" nav-mesh visible="true" position="0 0 0"></a-entity>
+      
+      <!--    Floor collider    -->
+      <a-box id="floor" static-body position="0 -0.42 0" rotation="-90 0 0" width="60" height="60" visible="false" ball-killer></a-box>
+      
+      <!--    Walls    -->
+      <a-box class="wall" static-body position="0 0 -10.2" rotation="0 0 0" width="100" height="100" depth="1" ball-killer visible="false"></a-box>
+      <a-box class="wall" static-body position="0 0 10.2" rotation="0 0 0" width="100" height="100" depth="1" ball-killer visible="false"></a-box>
+      <a-box class="wall" static-body position="-5.05 0 0" rotation="0 90 0" width="100" height="100" depth="1" ball-killer visible="false"></a-box>
+      <a-box class="wall" static-body position="5.05 0 0" rotation="0 90 0" width="100" height="100" depth="1" ball-killer visible="false"></a-box>
+      
+      <!--    Sky    -->
+      <a-sky color="#87ceeb"></a-sky>
+    </a-scene>
+    <!--  NAF schemas (need to be loaded after a-scene has loaded) -->
+    <script src="scripts/naf-schema.js"></script>
+    <!--   For drop down menu   -->
+    <script>
+    window.closeDropdown = function() {
+        console.log("closedropdown");
+        setTimeout(() => {
+          document.getElementById('mydropdown').setAttribute('visible', true);
+        }, 300);
+
+        var mydropdown = document.getElementById("mydropdown");
+              mydropdown.emit('closedropdown');
+        var myoptions = document.getElementById("myoptions");
+              myoptions.emit('closedropdown');
+
+      }
+      window.openDropdown = function() {
+        console.log("opendropdown");
+        var mydropdown = document.getElementById("mydropdown");
+              mydropdown.emit('opendropdown');
+        var myoptions = document.getElementById("myoptions");
+              myoptions.emit('opendropdown');
+
+      }
+      
+      window.selectHandler = function(e) {
+        let dropDown = document.getElementById('mydropdown');
+        let selectedValue = e.target.getAttribute('value');
+        dropDown.setAttribute('value', selectedValue);
+        let selectedEvent = new CustomEvent('dropdown-selected', { detail: selectedValue });
+        dropDown.dispatchEvent(selectedEvent);
+        window.closeDropdown();
+      }
+    </script>
+    
+    <!--    Test script for adding elements    -->
+    <script>
+      window.makeCone = function(el) {
+        
+        const pos = el.getAttribute('position');
+        const rot = el.getAttribute('rotation');
+        const scale = el.getAttribute('scale');
+        console.log(`addPhysicsShape('a-cone', '${pos.x} ${pos.y} ${pos.z}', '${rot.x} ${rot.y} ${rot.z}', '${scale.x} ${scale.y} ${scale.z}', true)`);
+        // console.log(`<a-cone static-body="shape: hull" position="${pos.x} ${pos.y} ${pos.z}" rotation="${rot.x} ${rot.y} ${rot.z}" scale="${scale.x} ${scale.y} ${scale.z}" visible="true"></a-cone>`);
+      }
+    </script>
+  </body>
+</html>

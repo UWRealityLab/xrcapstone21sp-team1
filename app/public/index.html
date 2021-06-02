@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VR Dodgeball</title>
+    <link href="/styles/main.css" rel="stylesheet" type="text/css">
+  </head>
+  <script>
+    // Update protocol to https if it is not being used.
+    if (location.protocol != "https:") {
+      location.href =
+        "https:" +
+        window.location.href.substring(window.location.protocol.length);
+    }
+    
+    // Hide room is full message if user hasn't been redirected.
+    window.addEventListener('load', (event) => {
+      var params = new URLSearchParams(window.location.search);
+      if (params.has("redirect")) {
+          document.getElementById("elementToHide").setAttribute("data-show-element", "true");
+      }
+    });
+  
+    // Generate random string of size length
+    function makeid(length) {
+      var result = [];
+      var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+      var charactersLength = characters.length;
+      for (var i = 0; i < length; i++) {
+        result.push(characters.charAt(Math.floor(Math.random() * charactersLength)));
+      }
+      return result.join('');
+    }
+    
+    // Generate random room name
+    function genRoomName() {
+      var randId = makeid(3);
+      document.getElementById("room").value = randId;
+    }
+
+    // Generate random username
+    function genUsername() {
+      var randId = makeid(3);
+      document.getElementById("username").value = "user-" + randId;
+    }
+  </script>
+  <body>
+    <!--   Form for specifiying username, team number, and room.  -->
+    <div class="form">
+      <h2> VR Dodgeball - Join a Room! </h2>
+      <form action="/scene.html" class="login-form" method="GET">  
+        <div style="width: 400px;">
+          <div class="t">
+            <input id="room" name="room" placeholder="Choose a room name" type="text" required /> 
+          </div>
+          <button type="button" onclick="genRoomName();"> Randomize </button>
+        </div>
+        <div style="width: 400px;">
+          <div class="t">
+            <input id="username" name="username" placeholder="Choose a username" type="text" required />
+          </div>
+          <button type="button" onclick="genUsername();"> Randomize </button>
+        </div>
+        <p id="elementToHide" style="color:red;">Sorry! A game is already being played in this room - please try another room.</p>
+        <button type="submit"> Enter Room </button>
+      </form>
+    </div>
+  </body>
+</html>

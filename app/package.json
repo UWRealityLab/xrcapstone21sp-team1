@@ -1,0 +1,25 @@
+{
+  "name": "vr-dodgeball",
+  "version": "1.0.0",
+  "description": "VR Dodgeball - Spring 2021 - UW",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Team CATE",
+  "dependencies": {
+    "networked-aframe": "^0.8.2"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/aba38"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ]
+}

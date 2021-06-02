@@ -1,0 +1,15 @@
+/* Styles for scene.html */
+
+.controls {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  flex-direction: row;
+  top: 0;
+}
+.controls p {
+  font-family: monospace;
+  color: white;
+}
