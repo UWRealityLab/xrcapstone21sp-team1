@@ -46,9 +46,6 @@ We plan on attending the final demo day to showcase our project on Monday and re
 
 <hr>
 
-### Notes
-- None
-
 ### Deliverables
 - [Link to final project (playable in headset)](https://aba49.glitch.me/)
 - [Link to our code on Github](https://github.com/UWRealityLab/xrcapstone21sp-team1/tree/master/app)
