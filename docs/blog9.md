@@ -9,11 +9,11 @@ filename: blog9
 <hr>
 
 ### What we accomplished
-
+This week we finished up work on capture the flag mode. 
 
 ### Individual work log
 
-- **Clarisa:** 
+- **Clarisa:** This week I worked with the team to help finish adding physics colliders to the capture the flag map. I also worked on the final presentation script/slides & our final PR video.
 
 - **Akash:** 
 
