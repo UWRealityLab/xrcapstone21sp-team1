@@ -18,7 +18,7 @@ For the game logic - we implemented the logic in the game lobby where upon start
 Below shows a video of a game play of our new capture the flag mode:
 <iframe width="660" height="415" src="https://www.youtube.com/embed/zTA3DkfFoVM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### Additional Improvements - Polishing App
+#### Additional Improvements - Polishing App
 As mentioned above - we spent some time polishing up our app and making various improvements. In previous versions - if microphone permission was not given the app would not start. We fixed it so that that the app will now start without microphone permissions. We also removed the laser/raycasters from the controllers which are used for menu selection once the game starts as when the game has begun - players are not able to open the menu anymore. Additionally - we went back and added a victory state to classic mode where if all of the members of the opposing team have been eliminated then a victory message will be displayed for the winning team (and a defeat message will be displayed for the losing team).
 
 Below shows a video of a game play of classic mode with the new victory message being displayed:
