@@ -37,4 +37,8 @@ filename: blog
 <hr>
 
 [Blog Post #8 - Starting Capture the Flag Mode - May 26th, 2021](https://uwrealitylab.github.io/xrcapstone21sp-team1/blog8)
+
+<hr>
+
+[Blog Post #9 - Finishing up capture the flag & end of the quarter! - June 3rd, 2021](https://uwrealitylab.github.io/xrcapstone21sp-team1/blog9)
 <hr>
