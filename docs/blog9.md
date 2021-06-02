@@ -21,6 +21,9 @@ Below shows a video of a game play of our new capture the flag mode:
 ### Additional Improvements - Polishing App
 As mentioned above - we spent some time polishing up our app and making various improvements. In previous versions - if microphone permission was not given the app would not start. We fixed it so that that the app will now start without microphone permissions. We also removed the laser/raycasters from the controllers which are used for menu selection once the game starts as when the game has begun - players are not able to open the menu anymore. Additionally - we went back and added a victory state to capture the flag mode where if all of the members of the opposing team have been eliminated then a victory message will be displayed for the winning team (and a defeat message will be displayed for the losing team).
 
+Below shows a video of a game play of classic mode with the new victory message being displayed:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CyolL3wHTik" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ### Individual work log
 
 - **Clarisa:** This week I worked with the team to help finish adding physics colliders to the capture the flag map. I also worked on the final presentation script/slides & our final PR video - as well as various housekeeping items with the website.
