@@ -49,5 +49,5 @@ We plan on attending the final demo day to showcase our project on Monday and re
 ### Deliverables
 - [Link to final project (playable in headset)](https://vr-dodgeball.glitch.me/)
 - [Link to our code on Github](https://github.com/UWRealityLab/xrcapstone21sp-team1/tree/master/app)
-- [Link to PR video](https://youtu.be/HoFF9onY47g)
+- [Link to PR video](https://youtu.be/Z8-qnqT3Pl0)
 - [Link to final presentation slides](https://docs.google.com/presentation/d/1pil2DFRitnMjbN64GfEy9QfPWpq5ioBwMjpeYMQNrAA/edit#slide=id.gdd7299ac0b_0_690)
