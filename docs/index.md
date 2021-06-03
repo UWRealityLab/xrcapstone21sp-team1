@@ -14,7 +14,7 @@ VR Dodgeball is a networked multiplayer game  built with AFRAME where players ca
 # Deliverables
 
 - Read more by visiting [our blog](/xrcapstone21sp-team1/blog).
-- Demo our project with all of our most recent additions [here](https://aba49.glitch.me/). Note: only available for play on the headset.
+- Demo our project with all of our most recent additions [here](https://vr-dodgeball.glitch.me/). Note: only available for play on the headset.
 - View our code on [Github](https://github.com/UWRealityLab/xrcapstone21sp-team1/tree/master/app).
 - Learn more by watching [our PR Video](https://youtu.be/HoFF9onY47g).
 
