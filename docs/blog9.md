@@ -28,7 +28,7 @@ Below shows a video of a game play of classic mode with the new victory message 
 
 - **Clarisa:** This week I worked with the team to help finish adding physics colliders to the capture the flag map. I also worked on the final presentation script/slides & our final PR video - as well as various housekeeping items with the website. I also worked on this blog post.
 
-- **Akash:**
+- **Akash:** I worked with Eddie to implement the game logic for capture the flag. We also worked on adding winning logic for both game modes and ended the game. Finally we all worked on adding physics colliders for the capture the flag map.
 
 - **Eddie:** I worked with Akash in implementing the rules for capture the flag along with concluding the game when a win condition is met. I also added physics colliders to the map.
 
