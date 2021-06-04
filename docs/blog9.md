@@ -30,7 +30,7 @@ Below shows a video of a game play of classic mode with the new victory message 
 
 - **Akash:**
 
-- **Eddie:**
+- **Eddie:** I worked with Akash in implementing the rules for capture the flag along with concluding the game when a win condition is met. I also added physics colliders to the map.
 
 - **Timothy:** I worked on adding physics colliders for the trees in the capture the flag map and also worked on various quality-of-life improvements, including removing raycasters once the game starts and making sure the game still works without microphone permissions are denied. I also researched various hosting methods in case we want to preserve our project after the quarter ends.
 
